@@ -1,0 +1,65 @@
+#! /bin/bash
+set -eu
+
+#
+# Globals
+#
+
+ROOT="$(git -C "$(readlink -f "$(dirname "${0}")")" rev-parse --show-toplevel)"
+DIRS=(gitignore)
+
+#
+# Functions
+#
+
+function list_gitignores() {
+  local dir
+  local key
+  local file
+  local url
+  for dir in "${DIRS[@]}"; do
+    if [ -d "${dir}" ]; then
+      while read -r file; do
+        key="$(echo "${file,,}" |
+              sed -e "s,${dir}/,,g" |
+              sed -e "s,^\./,,g" -e "s,community/,,g" -e "s,global/,,g" -e "s,/,_,g" |
+              sed -n "s,\(.*\).gitignore,\1,p")"
+        url="$(dirname "$(git -C "$(dirname "${file}")" remote get-url --all origin)")/${file//\.\//}"
+        echo "FILE[${key@Q}]=${file@Q}"
+        echo "URL[${key@Q}]=${url@Q}"
+        echo
+      done <<< "$(find "./${dir}" -type f -name "*.gitignore" | sort -d -f)"
+    fi
+  done
+}
+
+function print_header() {
+  cat << EOF
+#! /bin/bash
+
+#
+# WARNING: This file is auto-generated. Do not edit manually.
+#
+
+declare -A FILE
+declare -A URL
+
+EOF
+}
+
+function print_footer() {
+  cat << EOF
+export FILE
+export URL
+EOF
+}
+
+#
+# Main
+#
+
+pushd "${ROOT}" >/dev/null
+
+print_header
+list_gitignores
+print_footer
