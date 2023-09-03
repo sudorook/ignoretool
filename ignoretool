@@ -1,0 +1,485 @@
+#! /bin/bash
+set -Eeuo pipefail
+
+ROOT="$(readlink -f "$(dirname "${0}")")"
+
+source "${ROOT}"/data
+source "${ROOT}"/globals
+
+! check_command curl file fzf git xargs && exit 3
+
+# Parse string (either space- or comma-delimited). If all the given keys match
+# entries in the PATH and URL arrays, then set the global ARGS variable.
+# Otherwise, display the incorrect values and exit.
+function parse_args() {
+  local key
+  local args
+  local args_v2
+  local missing=()
+
+  # First try parsing as a comma-delimited list.
+  IFS="," read -r -a args <<< "${@}"
+  if [ "${#args[@]}" -eq 1 ]; then
+    # If the length is 1 (nothing separated out), try again with a space
+    # delimiter.
+    IFS=' ' read -r -a args_v2 <<< "${@}"
+    # Use the parser that produced the largest array.
+    if [ "${#args_v2[@]}" -gt "${#args[@]}" ]; then
+      args=("${args_v2[@]}")
+    fi
+  fi
+
+  for key in "${args[@]}"; do
+    if [ -z "${FILE["${key}"]:-}" ]; then
+      missing+=("${key}")
+    fi
+  done
+  if [ "${#missing[@]}" -gt 0 ]; then
+    show_error "ERROR: ${missing[*]@Q} invalid. Exiting."
+    exit 3
+  fi
+
+  ARGS=("${args[@]}")
+}
+
+# Perform the inverse return key given value (file path).
+function value_to_key {
+  local filename
+  local key
+
+  filename="$(basename "${1}")"
+  for key in "${!FILE[@]}"; do
+    if [[ "${FILE["${key}"]}" =~ /${filename}$ ]]; then
+      echo "${key}"
+      return
+    fi
+  done
+}
+
+function sanitize_url() {
+  sed -e "s/^['\"]//g" -e "s/['\"]$//g"
+}
+
+# Print list of all keys in the FILE array (see data) and use fzf to select
+# among them. (Need xargs to undo newline delimiter.)
+function fzf_select() {
+  printf "%s\n" "${!FILE[@]}" |
+    sort -f -d |
+    fzf -m --layout=reverse --header-first --print0 |
+    xargs -0
+}
+
+# Write output to disk, backing up exising .gitignore if necessary.
+function write_gitignore() {
+  # Changes are stored in memory as a temp file. Simply move from memory to the
+  # .gitignore location on disk.
+  if [ -f "${TMP}" ]; then
+    if [ -s "${TMP}" ]; then
+      if [ -f "${INFILE}" ]; then
+        mv -v "${INFILE}" "${INFILE}_$(date +%Y%m%d-%H%M%S)"
+      fi
+      mv -v "${TMP}" "${INFILE}"
+    else
+      show_error "ERROR: New .gitignore file is empty. Aborting."
+      exit 3
+    fi
+  else
+    show_error "ERROR: ${TMP} file missing... Aborting."
+    exit 3
+  fi
+}
+
+# Print the file in FILE identified by the key ${1}.
+function print_section() {
+  local key="${1}"
+  local f
+  local u
+  f="${FILE["${key}"]}"
+  u="${URL["${key}"]}"
+  cat << EOF
+
+#
+# FROM: ${u}
+#
+
+EOF
+    cat "${ROOT}/${f}"
+}
+
+# Called when the path for the .gitignore file ('-f' command line argument) is
+# not specified.
+function get_gitignore_path() {
+  local root
+
+  # First use Git to get the root of the repository, look for a .gitignore file
+  # there.
+  if git rev-parse 2> /dev/null; then
+    root="$(git rev-parse --show-toplevel)"
+    echo "${root}"/.gitignore
+    return
+  fi
+
+  # If not found via Git, try for the current workign directory. Exit if not found.
+  if [ -f .gitignore ]; then
+    echo ".gitignore"
+    return
+  fi
+
+  show_error "ERROR: Could not find .gitignore file. Exiting."
+  exit 3
+}
+
+# Add a new ignore section to an existing .gitignore file.
+function add() {
+  local selections
+  local key
+  local u
+  local f
+  local line
+  local source
+  local idx
+  local tmp
+
+  # Read list of sections to add, either from ARGS or fzf.
+  read -r -a selections <<< "${@}"
+  if [ -z "${selections[*]}" ]; then
+    return
+  fi
+
+  # First, check if the desired section already exists. If so, skip it.
+  while read -r line; do
+    # For each section header found in the .gitignore file, parse the header
+    # and check its identity against the list of identities of sections to add.
+    # If there is a match, remove the item from selections().
+    if grep -q "^#\+ F\(ROM\|rom\):\?" <<< "${line}"; then
+      source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\):\? \(.*\),\2,p")"
+      tmp="$(basename "${source}")"
+      for idx in "${!selections[@]}"; do
+        key="${selections["${idx}"]}"
+        if [ "$(basename "${source}")" = "$(basename "${FILE["${key}"]}")" ]; then
+          show_info "${key@Q} already in .gitignore. Skipping."
+          unset "selections[${idx}]"
+        fi
+      done
+      selections=("${selections[@]}")  # resets the array indices...
+
+      # If all the sections specified in selections() are already present,
+      # simply exit.
+      if [[ -z "${selections[*]}" ]]; then
+        return
+      fi
+    fi
+  done < "${INFILE}"
+
+  # Print all files to stdout.
+  cat "${INFILE}"
+  for key in "${selections[@]}"; do
+    print_section "${key}"
+  done
+}
+
+# Create a .gitignore file in the current directory from scratch.
+function create() {
+  local key
+  local _key
+  local f
+  local u
+  local selections=()
+  local selections_new=()
+  local count
+
+  # Read list of sections to add, either from ARGS or fzf.
+  read -r -a selections <<< "${@}"
+  # mapfile -t selections <<< "${@}"
+
+  # First prune any overlaps in the selections from the DEFAULT list of files
+  # to include in a new .gitignore file.
+  for key in "${selections[@]}"; do
+    count=0
+    for _key in "${DEFAULTS[@]}"; do
+      if ! [[ "${key}" = "${_key}" ]]; then
+        count=$((count + 1))
+      fi
+    done
+    if [ "${count}" -eq "${#DEFAULTS[@]}" ]; then
+      selections_new+=("${key}")
+    fi
+  done
+  selections=("${DEFAULTS[@]}" "${selections_new[@]}")
+
+  # If all the sections specified in selections() are already present, simply
+  # exit.
+  if [ -z "${selections[*]}" ]; then
+    return
+  fi
+
+  # Print all files to stdout.
+  cat << EOF
+################################################################################
+# WARNING: Below rules are auto-generated. Enter custom rules above.
+################################################################################
+EOF
+  for key in "${selections[@]}"; do
+    print_section "${key}"
+  done
+}
+
+# List all the sections in a .gitignore file. Not for writing changes.
+function list() {
+  local sections=()
+  local line
+  local source
+  local key
+
+  # Iterate over the .gitignore file (INFILE) and extract section identities
+  # from the headers.
+  while read -r line; do
+    if [[ "${line}" =~ ^\#+\ F(ROM|rom) ]] ||
+       [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]]; then
+      source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\): \(.*\),\2,p")"
+      sections+=("${source}")
+    elif [[ "${line}" =~ ^\#+$ ]]; then
+      continue
+    fi
+  done < "${INFILE}"
+
+  # Print list of parsed section identities.
+  if [ "${#sections[@]}" -gt 0 ]; then
+    show_header "Rulesets in ${INFILE@Q}:"
+    for source in "${sections[@]}"; do
+      key="$(value_to_key "${source}")"
+      show_listitem "- ${key}: ${source}"
+    done
+  fi
+}
+
+# Remove sections from the .gitigore file.
+function remove() {
+  local sections=()
+  local source
+  local line
+  local tmp=()
+  local key
+  local selection
+  local selections=()
+  local skip=false
+
+  # Read list of sections to add, either from ARGS or fzf.
+  read -r -a selections <<< "${@}"
+  # mapfile -t selections <<< "${@}"
+  if [ -z "${selections[*]}" ]; then
+    return
+  fi
+
+  # Read through the .gitignore and parse section headers. If a section to be
+  # removed is encountered, do not print the line to stdout. Otherwise, print.
+  while read -r line; do
+    # Use tmp() array to store read lines in a buffer. Used for parsing
+    # multi-line section headers correctly.
+    tmp+=("${line}")
+    if [[ "${line}" =~ ^\#+ ]]; then
+      while [[ "${line}" =~ ^\#+ ]]; do
+        if [[ "${line}" =~ ^\#+\ F(ROM|rom) ]] ||
+          [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]]; then
+          skip=false
+          source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\): \(.*\),\2,p")"
+          if [ -n "${source}" ]; then
+            key="$(value_to_key "${source}")"
+            if [ -n "${key}" ]; then
+              for selection in "${selections[@]}"; do
+                if [[ "${key}" = "${selection}" ]]; then
+                  skip=true
+                  break
+                fi
+              done
+            fi
+          fi
+        fi
+        if ! read -r line; then
+          break
+        fi
+        tmp+=("${line}")
+      done
+    fi
+
+    # Empty remaining lines from the buffer if the last section is not to be
+    # skipped.
+    if ! "${skip}"; then
+      if [ "${#tmp[@]}" -gt 0 ]; then
+        printf "%s\n" "${tmp[@]}"
+      fi
+    fi
+    tmp=()
+  done < "${INFILE}"
+}
+
+# Parse .gitignore file for all the included sections, and regenerate using
+# program-specific sections from upstream github/githignore repo.
+function update() {
+  local sections=()
+  local line
+  local is_header=true
+  local source
+  local tmp
+  local key
+  local f
+  local u
+
+  # First, parse the file for any custom rules at the top. Then, search for
+  # section headers and store their identities in an array.
+  while read -r line; do
+    if [[ "${line}" =~ ^\#+\ F(ROM|rom) ]] ||
+       [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]]; then
+      is_header=false
+      source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\): \(.*\),\2,p")"
+      sections+=("${source}")
+    elif [[ "${line}" =~ ^\#+$ ]]; then
+      continue
+    fi
+    if "${is_header}"; then
+      echo "${line}"
+    fi
+  done < "${INFILE}"
+
+  if [ -n "${sections[*]}" ]; then
+    cat << EOF
+################################################################################
+# WARNING: Below rules are auto-generated. Enter custom rules above.
+################################################################################
+EOF
+    for source in "${sections[@]}"; do
+      # If file has a custom URL, try to match it to the FILE entries based on
+      # identity of the file name. If no match is found, try downloading the
+      # URL vai cURL.
+      tmp="${source//https:\/\/github.com\/github\//}"
+      if ! [ -f "${tmp}" ]; then
+        key="$(value_to_key "${source}")"
+        if [ -n "${key}" ]; then
+          print_section "${key}"
+        else
+          source="$(sanitize_url "${source}")"
+          if ! curl -s "${source}"; then
+            show_error "ERROR: ${source@Q} not found." >&2
+            return 1
+          fi
+        fi
+      else
+        cat << EOF
+
+#
+# FROM: ${source}
+#
+
+EOF
+        cat "${tmp}"
+      fi
+    done
+  fi
+}
+
+function print_usage() {
+  show_header "usage: ignoretool <mode> <arglist> -f <gitignore> -w"
+  show_listitem "     <mode>       add, create, list, remove, or update"
+  show_listitem "     <arglist>    (optional) list of programs to append to .gitignore"
+  show_listitem "  -f <gitignore>  (optional) path to Git repo .gitignore file"
+  show_listitem "  -w              (optional) write output to disk instead of stdout"
+}
+
+DEFAULTS=(archives backup diff emacs linux macos sublimetext vim visualstudio windows xcode)
+
+if [ "${#}" -eq 0 ]; then
+  show_error "ERROR: No parameters given. Exiting."
+  exit 3
+fi
+
+MODE="${1}"
+WRITE=false
+
+OPTIONS=h,f:w
+LONGOPTIONS=help,file:,write
+PARSED=$(getopt -o "${OPTIONS}" --long "${LONGOPTIONS}" -n "${0}" -- "${@:2}")
+eval set -- "${PARSED}"
+
+while [ ${#} -ge 1 ]; do
+  case ${1} in
+    -f | --file)
+      INFILE="${2}"
+      shift 2
+      ;;
+    -h | --help)
+      print_usage
+      exit
+      ;;
+    -w | --write)
+      WRITE=true
+      shift
+      ;;
+    --)
+      shift
+      break
+      ;;
+    *)
+      show_error "Error: invalid flag."
+      exit 3
+      ;;
+  esac
+done
+
+INFILE="${INFILE:-$(get_gitignore_path)}"
+if ! [ -f "${INFILE}" ]; then
+  show_error "ERROR: ${INFILE@Q} doesn't exist."
+  exit 3
+fi
+
+parse_args "${@}"
+
+if "${WRITE}"; then
+  TMP=$(mktemp)
+  trap 'rm -f "${TMP}"; exit' INT EXIT ERR QUIT
+fi
+
+case "${MODE}" in
+  add)
+    if "${WRITE}"; then
+      add "${ARGS[@]:-$(fzf_select)}" > "${TMP}"
+      write_gitignore
+    else
+      add "${ARGS[@]:-$(fzf_select)}"
+    fi
+    ;;
+  create)
+    if "${WRITE}"; then
+      create "${ARGS[@]:-$(fzf_select)}" > "${TMP}"
+      write_gitignore
+    else
+      create "${ARGS[@]:-$(fzf_select)}"
+    fi
+    ;;
+  help | -h | --help)
+    print_usage
+    exit
+    ;;
+  list | ls)
+    list
+    ;;
+  remove)
+    if "${WRITE}"; then
+      remove "${ARGS[@]:-$(fzf_select)}" > "${TMP}"
+      write_gitignore
+    else
+      remove "${ARGS[@]:-$(fzf_select)}"
+    fi
+    ;;
+  update)
+    if "${WRITE}"; then
+      update > "${TMP}"
+      write_gitignore
+    else
+      update
+    fi
+    ;;
+  *)
+    show_error "ERROR: ${MODE@Q} not known. Exiting."
+    exit 3
+    ;;
+esac
