@@ -237,7 +237,9 @@ function list() {
     if [[ "${line}" =~ ^\#+\ F(ROM|rom) ]] ||
        [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]]; then
       source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\): \(.*\),\2,p")"
-      sections+=("${source}")
+      if [ -n "${source}" ]; then
+        sections+=("${source}")
+      fi
     elif [[ "${line}" =~ ^\#+$ ]]; then
       continue
     fi
@@ -331,8 +333,10 @@ function update() {
     if [[ "${line}" =~ ^\#+\ F(ROM|rom) ]] ||
        [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]]; then
       is_header=false
-      source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\): \(.*\),\2,p")"
-      sections+=("${source}")
+      source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\):\? \(.*\),\2,p")"
+      if [ -n "${source}" ]; then
+        sections+=("${source}")
+      fi
     elif [[ "${line}" =~ ^\#+$ ]]; then
       continue
     fi
