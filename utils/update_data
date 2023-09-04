@@ -8,6 +8,8 @@ set -eu
 ROOT="$(git -C "$(readlink -f "$(dirname "${0}")")" rev-parse --show-toplevel)"
 DIRS=(gitignore)
 
+source "${ROOT}/globals"
+
 #
 # Functions
 #
@@ -49,7 +51,7 @@ function list_gitignores() {
             url="${host}/${acct}/${repo}/raw/branch/${branch}/$(basename "${file}")"
             ;;
           *)
-            echo "WARNING: ${file@Q} unsupported. Skipping."
+            show_error "WARNING: ${file@Q} unsupported. Skipping."
             continue
             ;;
         esac
