@@ -35,7 +35,7 @@ function parse_args() {
     fi
   done
   if [ "${#missing[@]}" -gt 0 ]; then
-    show_error "ERROR: ${missing[*]@Q} invalid. Exiting."
+    show_error "ERROR: ${missing[*]@Q} invalid. Exiting." >&2
     exit 3
   fi
 
@@ -80,11 +80,11 @@ function write_gitignore() {
       fi
       mv -v "${TMP}" "${INFILE}"
     else
-      show_error "ERROR: New .gitignore file is empty. Aborting."
+      show_error "ERROR: New .gitignore file is empty. Aborting." >&2
       exit 3
     fi
   else
-    show_error "ERROR: ${TMP} file missing... Aborting."
+    show_error "ERROR: ${TMP} file missing... Aborting." >&2
     exit 3
   fi
 }
@@ -129,7 +129,7 @@ function get_gitignore_path() {
     return
   fi
 
-  show_error "ERROR: Could not find .gitignore file. Exiting."
+  show_error "ERROR: Could not find .gitignore file. Exiting." >&2
   exit 3
 }
 
@@ -161,7 +161,7 @@ function add() {
       for idx in "${!selections[@]}"; do
         key="${selections["${idx}"]}"
         if [ "$(basename "${source}")" = "$(basename "${FILE["${key}"]}")" ]; then
-          show_info "${key@Q} already in .gitignore. Skipping."
+          show_info "${key@Q} already in .gitignore. Skipping." >&2
           unset "selections[${idx}]"
         fi
       done
@@ -251,10 +251,10 @@ function list() {
 
   # Print list of parsed section identities.
   if [ "${#sections[@]}" -gt 0 ]; then
-    show_header "Rulesets in ${INFILE@Q}:"
+    show_header "Rulesets in ${INFILE@Q}:" >&2
     for source in "${sections[@]}"; do
       key="$(value_to_key "${source}")"
-      show_listitem "- ${key}: ${source}"
+      show_listitem "- ${key}: ${source}" >&2
     done
   fi
 }
@@ -398,7 +398,7 @@ function print_usage() {
 DEFAULTS=(archives backup diff emacs linux macos sublimetext vim visualstudio windows xcode)
 
 if [ "${#}" -eq 0 ]; then
-  show_error "ERROR: No parameters given. Exiting."
+  show_error "ERROR: No parameters given. Exiting." >&2
   exit 3
 fi
 
@@ -429,7 +429,7 @@ while [ ${#} -ge 1 ]; do
       break
       ;;
     *)
-      show_error "Error: invalid flag."
+      show_error "Error: invalid flag." >&2
       exit 3
       ;;
   esac
@@ -437,7 +437,7 @@ done
 
 INFILE="${INFILE:-$(get_gitignore_path)}"
 if ! [ -f "${INFILE}" ]; then
-  show_error "ERROR: ${INFILE@Q} doesn't exist."
+  show_error "ERROR: ${INFILE@Q} doesn't exist." >&2
   exit 3
 fi
 
@@ -489,7 +489,7 @@ case "${MODE}" in
     fi
     ;;
   *)
-    show_error "ERROR: ${MODE@Q} not known. Exiting."
+    show_error "ERROR: ${MODE@Q} not known. Exiting." >&2
     exit 3
     ;;
 esac

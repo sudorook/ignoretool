@@ -51,7 +51,7 @@ function list_gitignores() {
             url="${host}/${acct}/${repo}/raw/branch/${branch}/$(basename "${file}")"
             ;;
           *)
-            show_error "WARNING: ${file@Q} unsupported. Skipping."
+            show_error "WARNING: ${file@Q} unsupported. Skipping." >&2
             continue
             ;;
         esac
