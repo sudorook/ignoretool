@@ -351,7 +351,9 @@ EOF
       # If file has a custom URL, try to match it to the FILE entries based on
       # identity of the file name. If no match is found, try downloading the
       # URL vai cURL.
-      tmp="${source//https:\/\/github.com\/github\//}"
+      tmp="${source//https:\/\//}"
+      tmp="${tmp#*/}"
+      tmp="${tmp#*/}"
       if ! [ -f "${tmp}" ]; then
         key="$(value_to_key "${source}")"
         if [ -n "${key}" ]; then
