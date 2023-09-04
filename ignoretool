@@ -96,7 +96,8 @@ function print_section() {
   local u
   f="${FILE["${key}"]}"
   u="${URL["${key}"]}"
-  cat << EOF
+  if [ -f "${f}" ]; then
+    cat << EOF
 
 #
 # FROM: ${u}
@@ -104,6 +105,9 @@ function print_section() {
 
 EOF
     cat "${ROOT}/${f}"
+  else
+    curl -s "${u}"
+  fi
 }
 
 # Called when the path for the .gitignore file ('-f' command line argument) is
