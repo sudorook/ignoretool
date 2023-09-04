@@ -5,10 +5,12 @@ set -eu
 # Globals
 #
 
-ROOT="$(git -C "$(readlink -f "$(dirname "${0}")")" rev-parse --show-toplevel)"
+ROOT="$(dirname "$(dirname "$(readlink -f "${0}")")")"
 DIRS=(gitignore)
 
 source "${ROOT}/globals"
+
+! check_command find git && exit 3
 
 #
 # Functions
