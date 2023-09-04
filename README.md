@@ -7,7 +7,7 @@ program-specific files available at
 ## Usage:
 
 ```sh
-ignoretool <mode> <list> -w -f <file>
+ignoretool <mode> <list> -w -k -f <file>
 ```
 
 ### Arguments:
@@ -33,6 +33,11 @@ specify which ignore files to use.
 
 The script will print to `stdout` by default. To write to the gitignore file
 itself, pass the `-w` flag to the script.
+
+#### `-k` or `--keep` (optional)
+
+Use `-k` in conjunction with `-w` to backup the existing .gitignore before
+writing the new one. Should be unnecessary if the file is already versioned.
 
 #### `-f <file>` (optional)
 

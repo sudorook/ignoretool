@@ -75,7 +75,7 @@ function write_gitignore() {
   # .gitignore location on disk.
   if [ -f "${TMP}" ]; then
     if [ -s "${TMP}" ]; then
-      if [ -f "${INFILE}" ]; then
+      if [ -f "${INFILE}" ] && "${KEEP}"; then
         mv -v "${INFILE}" "${INFILE}_$(date +%Y%m%d-%H%M%S)"
       fi
       mv -v "${TMP}" "${INFILE}"
@@ -393,6 +393,7 @@ function print_usage() {
   show_listitem "     <arglist>    (optional) list of programs to append to .gitignore"
   show_listitem "  -f <gitignore>  (optional) path to Git repo .gitignore file"
   show_listitem "  -w              (optional) write output to disk instead of stdout"
+  show_listitem "  -k              (optional) backup exisint .gitignore before writing new one"
 }
 
 DEFAULTS=(archives backup diff emacs linux macos sublimetext vim visualstudio windows xcode)
@@ -404,9 +405,10 @@ fi
 
 MODE="${1}"
 WRITE=false
+KEEP=false
 
-OPTIONS=h,f:w
-LONGOPTIONS=help,file:,write
+OPTIONS=h,f:kw
+LONGOPTIONS=help,file:,keep,write
 PARSED=$(getopt -o "${OPTIONS}" --long "${LONGOPTIONS}" -n "${0}" -- "${@:2}")
 eval set -- "${PARSED}"
 
@@ -419,6 +421,10 @@ while [ ${#} -ge 1 ]; do
     -h | --help)
       print_usage
       exit
+      ;;
+    -k | --keep)
+      KEEP=true
+      shift
       ;;
     -w | --write)
       WRITE=true
