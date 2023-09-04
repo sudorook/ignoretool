@@ -8,748 +8,748 @@ declare -A FILE
 declare -A URL
 
 FILE['actionscript']='./gitignore/Actionscript.gitignore'
-URL['actionscript']='https://github.com/github/gitignore/Actionscript.gitignore'
+URL['actionscript']='https://raw.githubusercontent.com/github/gitignore/master/Actionscript.gitignore'
 
 FILE['ada']='./gitignore/Ada.gitignore'
-URL['ada']='https://github.com/github/gitignore/Ada.gitignore'
+URL['ada']='https://raw.githubusercontent.com/github/gitignore/master/Ada.gitignore'
 
 FILE['agda']='./gitignore/Agda.gitignore'
-URL['agda']='https://github.com/github/gitignore/Agda.gitignore'
+URL['agda']='https://raw.githubusercontent.com/github/gitignore/master/Agda.gitignore'
 
 FILE['al']='./gitignore/AL.gitignore'
-URL['al']='https://github.com/github/gitignore/AL.gitignore'
+URL['al']='https://raw.githubusercontent.com/github/gitignore/master/AL.gitignore'
 
 FILE['android']='./gitignore/Android.gitignore'
-URL['android']='https://github.com/github/gitignore/Android.gitignore'
+URL['android']='https://raw.githubusercontent.com/github/gitignore/master/Android.gitignore'
 
 FILE['appceleratortitanium']='./gitignore/AppceleratorTitanium.gitignore'
-URL['appceleratortitanium']='https://github.com/github/gitignore/AppceleratorTitanium.gitignore'
+URL['appceleratortitanium']='https://raw.githubusercontent.com/github/gitignore/master/AppceleratorTitanium.gitignore'
 
 FILE['appengine']='./gitignore/AppEngine.gitignore'
-URL['appengine']='https://github.com/github/gitignore/AppEngine.gitignore'
+URL['appengine']='https://raw.githubusercontent.com/github/gitignore/master/AppEngine.gitignore'
 
 FILE['archlinuxpackages']='./gitignore/ArchLinuxPackages.gitignore'
-URL['archlinuxpackages']='https://github.com/github/gitignore/ArchLinuxPackages.gitignore'
+URL['archlinuxpackages']='https://raw.githubusercontent.com/github/gitignore/master/ArchLinuxPackages.gitignore'
 
 FILE['autotools']='./gitignore/Autotools.gitignore'
-URL['autotools']='https://github.com/github/gitignore/Autotools.gitignore'
+URL['autotools']='https://raw.githubusercontent.com/github/gitignore/master/Autotools.gitignore'
 
 FILE['cakephp']='./gitignore/CakePHP.gitignore'
-URL['cakephp']='https://github.com/github/gitignore/CakePHP.gitignore'
+URL['cakephp']='https://raw.githubusercontent.com/github/gitignore/master/CakePHP.gitignore'
 
 FILE['cfwheels']='./gitignore/CFWheels.gitignore'
-URL['cfwheels']='https://github.com/github/gitignore/CFWheels.gitignore'
+URL['cfwheels']='https://raw.githubusercontent.com/github/gitignore/master/CFWheels.gitignore'
 
 FILE['c++']='./gitignore/C++.gitignore'
-URL['c++']='https://github.com/github/gitignore/C++.gitignore'
+URL['c++']='https://raw.githubusercontent.com/github/gitignore/master/C++.gitignore'
 
 FILE['c']='./gitignore/C.gitignore'
-URL['c']='https://github.com/github/gitignore/C.gitignore'
+URL['c']='https://raw.githubusercontent.com/github/gitignore/master/C.gitignore'
 
 FILE['chefcookbook']='./gitignore/ChefCookbook.gitignore'
-URL['chefcookbook']='https://github.com/github/gitignore/ChefCookbook.gitignore'
+URL['chefcookbook']='https://raw.githubusercontent.com/github/gitignore/master/ChefCookbook.gitignore'
 
 FILE['cmake']='./gitignore/CMake.gitignore'
-URL['cmake']='https://github.com/github/gitignore/CMake.gitignore'
+URL['cmake']='https://raw.githubusercontent.com/github/gitignore/master/CMake.gitignore'
 
 FILE['codeigniter']='./gitignore/CodeIgniter.gitignore'
-URL['codeigniter']='https://github.com/github/gitignore/CodeIgniter.gitignore'
+URL['codeigniter']='https://raw.githubusercontent.com/github/gitignore/master/CodeIgniter.gitignore'
 
 FILE['commonlisp']='./gitignore/CommonLisp.gitignore'
-URL['commonlisp']='https://github.com/github/gitignore/CommonLisp.gitignore'
+URL['commonlisp']='https://raw.githubusercontent.com/github/gitignore/master/CommonLisp.gitignore'
 
 FILE['altiumdesigner']='./gitignore/community/AltiumDesigner.gitignore'
-URL['altiumdesigner']='https://github.com/github/gitignore/community/AltiumDesigner.gitignore'
+URL['altiumdesigner']='https://raw.githubusercontent.com/github/gitignore/master/AltiumDesigner.gitignore'
 
 FILE['autoit']='./gitignore/community/AutoIt.gitignore'
-URL['autoit']='https://github.com/github/gitignore/community/AutoIt.gitignore'
+URL['autoit']='https://raw.githubusercontent.com/github/gitignore/master/AutoIt.gitignore'
 
 FILE['aws_cdk']='./gitignore/community/AWS/CDK.gitignore'
-URL['aws_cdk']='https://github.com/github/gitignore/community/AWS/CDK.gitignore'
+URL['aws_cdk']='https://raw.githubusercontent.com/github/gitignore/master/CDK.gitignore'
 
 FILE['aws_sam']='./gitignore/community/AWS/SAM.gitignore'
-URL['aws_sam']='https://github.com/github/gitignore/community/AWS/SAM.gitignore'
+URL['aws_sam']='https://raw.githubusercontent.com/github/gitignore/master/SAM.gitignore'
 
 FILE['b4x']='./gitignore/community/B4X.gitignore'
-URL['b4x']='https://github.com/github/gitignore/community/B4X.gitignore'
+URL['b4x']='https://raw.githubusercontent.com/github/gitignore/master/B4X.gitignore'
 
 FILE['bazel']='./gitignore/community/Bazel.gitignore'
-URL['bazel']='https://github.com/github/gitignore/community/Bazel.gitignore'
+URL['bazel']='https://raw.githubusercontent.com/github/gitignore/master/Bazel.gitignore'
 
 FILE['beef']='./gitignore/community/Beef.gitignore'
-URL['beef']='https://github.com/github/gitignore/community/Beef.gitignore'
+URL['beef']='https://raw.githubusercontent.com/github/gitignore/master/Beef.gitignore'
 
 FILE['dotnet_core']='./gitignore/community/DotNet/core.gitignore'
-URL['dotnet_core']='https://github.com/github/gitignore/community/DotNet/core.gitignore'
+URL['dotnet_core']='https://raw.githubusercontent.com/github/gitignore/master/core.gitignore'
 
 FILE['dotnet_inforcms']='./gitignore/community/DotNet/InforCMS.gitignore'
-URL['dotnet_inforcms']='https://github.com/github/gitignore/community/DotNet/InforCMS.gitignore'
+URL['dotnet_inforcms']='https://raw.githubusercontent.com/github/gitignore/master/InforCMS.gitignore'
 
 FILE['dotnet_kentico']='./gitignore/community/DotNet/Kentico.gitignore'
-URL['dotnet_kentico']='https://github.com/github/gitignore/community/DotNet/Kentico.gitignore'
+URL['dotnet_kentico']='https://raw.githubusercontent.com/github/gitignore/master/Kentico.gitignore'
 
 FILE['dotnet_umbraco']='./gitignore/community/DotNet/Umbraco.gitignore'
-URL['dotnet_umbraco']='https://github.com/github/gitignore/community/DotNet/Umbraco.gitignore'
+URL['dotnet_umbraco']='https://raw.githubusercontent.com/github/gitignore/master/Umbraco.gitignore'
 
 FILE['elixir_phoenix']='./gitignore/community/Elixir/Phoenix.gitignore'
-URL['elixir_phoenix']='https://github.com/github/gitignore/community/Elixir/Phoenix.gitignore'
+URL['elixir_phoenix']='https://raw.githubusercontent.com/github/gitignore/master/Phoenix.gitignore'
 
 FILE['embedded_atmelstudio']='./gitignore/community/embedded/AtmelStudio.gitignore'
-URL['embedded_atmelstudio']='https://github.com/github/gitignore/community/embedded/AtmelStudio.gitignore'
+URL['embedded_atmelstudio']='https://raw.githubusercontent.com/github/gitignore/master/AtmelStudio.gitignore'
 
 FILE['embedded_esp-idf']='./gitignore/community/embedded/esp-idf.gitignore'
-URL['embedded_esp-idf']='https://github.com/github/gitignore/community/embedded/esp-idf.gitignore'
+URL['embedded_esp-idf']='https://raw.githubusercontent.com/github/gitignore/master/esp-idf.gitignore'
 
 FILE['embedded_iar_ewarm']='./gitignore/community/embedded/IAR_EWARM.gitignore'
-URL['embedded_iar_ewarm']='https://github.com/github/gitignore/community/embedded/IAR_EWARM.gitignore'
+URL['embedded_iar_ewarm']='https://raw.githubusercontent.com/github/gitignore/master/IAR_EWARM.gitignore'
 
 FILE['embedded_uvision']='./gitignore/community/embedded/uVision.gitignore'
-URL['embedded_uvision']='https://github.com/github/gitignore/community/embedded/uVision.gitignore'
+URL['embedded_uvision']='https://raw.githubusercontent.com/github/gitignore/master/uVision.gitignore'
 
 FILE['exercism']='./gitignore/community/Exercism.gitignore'
-URL['exercism']='https://github.com/github/gitignore/community/Exercism.gitignore'
+URL['exercism']='https://raw.githubusercontent.com/github/gitignore/master/Exercism.gitignore'
 
 FILE['gnome_gnomeshellextension']='./gitignore/community/GNOME/GNOMEShellExtension.gitignore'
-URL['gnome_gnomeshellextension']='https://github.com/github/gitignore/community/GNOME/GNOMEShellExtension.gitignore'
+URL['gnome_gnomeshellextension']='https://raw.githubusercontent.com/github/gitignore/master/GNOMEShellExtension.gitignore'
 
 FILE['golang_go.allowlist']='./gitignore/community/Golang/Go.AllowList.gitignore'
-URL['golang_go.allowlist']='https://github.com/github/gitignore/community/Golang/Go.AllowList.gitignore'
+URL['golang_go.allowlist']='https://raw.githubusercontent.com/github/gitignore/master/Go.AllowList.gitignore'
 
 FILE['golang_hugo']='./gitignore/community/Golang/Hugo.gitignore'
-URL['golang_hugo']='https://github.com/github/gitignore/community/Golang/Hugo.gitignore'
+URL['golang_hugo']='https://raw.githubusercontent.com/github/gitignore/master/Hugo.gitignore'
 
 FILE['gretl']='./gitignore/community/Gretl.gitignore'
-URL['gretl']='https://github.com/github/gitignore/community/Gretl.gitignore'
+URL['gretl']='https://raw.githubusercontent.com/github/gitignore/master/Gretl.gitignore'
 
 FILE['java_jboss4']='./gitignore/community/Java/JBoss4.gitignore'
-URL['java_jboss4']='https://github.com/github/gitignore/community/Java/JBoss4.gitignore'
+URL['java_jboss4']='https://raw.githubusercontent.com/github/gitignore/master/JBoss4.gitignore'
 
 FILE['java_jboss6']='./gitignore/community/Java/JBoss6.gitignore'
-URL['java_jboss6']='https://github.com/github/gitignore/community/Java/JBoss6.gitignore'
+URL['java_jboss6']='https://raw.githubusercontent.com/github/gitignore/master/JBoss6.gitignore'
 
 FILE['javascript_cordova']='./gitignore/community/JavaScript/Cordova.gitignore'
-URL['javascript_cordova']='https://github.com/github/gitignore/community/JavaScript/Cordova.gitignore'
+URL['javascript_cordova']='https://raw.githubusercontent.com/github/gitignore/master/Cordova.gitignore'
 
 FILE['javascript_meteor']='./gitignore/community/JavaScript/Meteor.gitignore'
-URL['javascript_meteor']='https://github.com/github/gitignore/community/JavaScript/Meteor.gitignore'
+URL['javascript_meteor']='https://raw.githubusercontent.com/github/gitignore/master/Meteor.gitignore'
 
 FILE['javascript_nwjs']='./gitignore/community/JavaScript/NWjs.gitignore'
-URL['javascript_nwjs']='https://github.com/github/gitignore/community/JavaScript/NWjs.gitignore'
+URL['javascript_nwjs']='https://raw.githubusercontent.com/github/gitignore/master/NWjs.gitignore'
 
 FILE['javascript_vue']='./gitignore/community/JavaScript/Vue.gitignore'
-URL['javascript_vue']='https://github.com/github/gitignore/community/JavaScript/Vue.gitignore'
+URL['javascript_vue']='https://raw.githubusercontent.com/github/gitignore/master/Vue.gitignore'
 
 FILE['lensstudio']='./gitignore/community/LensStudio.gitignore'
-URL['lensstudio']='https://github.com/github/gitignore/community/LensStudio.gitignore'
+URL['lensstudio']='https://raw.githubusercontent.com/github/gitignore/master/LensStudio.gitignore'
 
 FILE['linux_snap']='./gitignore/community/Linux/Snap.gitignore'
-URL['linux_snap']='https://github.com/github/gitignore/community/Linux/Snap.gitignore'
+URL['linux_snap']='https://raw.githubusercontent.com/github/gitignore/master/Snap.gitignore'
 
 FILE['logtalk']='./gitignore/community/Logtalk.gitignore'
-URL['logtalk']='https://github.com/github/gitignore/community/Logtalk.gitignore'
+URL['logtalk']='https://raw.githubusercontent.com/github/gitignore/master/Logtalk.gitignore'
 
 FILE['nasaspecsintact']='./gitignore/community/NasaSpecsIntact.gitignore'
-URL['nasaspecsintact']='https://github.com/github/gitignore/community/NasaSpecsIntact.gitignore'
+URL['nasaspecsintact']='https://raw.githubusercontent.com/github/gitignore/master/NasaSpecsIntact.gitignore'
 
 FILE['nix']='./gitignore/community/Nix.gitignore'
-URL['nix']='https://github.com/github/gitignore/community/Nix.gitignore'
+URL['nix']='https://raw.githubusercontent.com/github/gitignore/master/Nix.gitignore'
 
 FILE['openssl']='./gitignore/community/OpenSSL.gitignore'
-URL['openssl']='https://github.com/github/gitignore/community/OpenSSL.gitignore'
+URL['openssl']='https://raw.githubusercontent.com/github/gitignore/master/OpenSSL.gitignore'
 
 FILE['php_bitrix']='./gitignore/community/PHP/Bitrix.gitignore'
-URL['php_bitrix']='https://github.com/github/gitignore/community/PHP/Bitrix.gitignore'
+URL['php_bitrix']='https://raw.githubusercontent.com/github/gitignore/master/Bitrix.gitignore'
 
 FILE['php_codesniffer']='./gitignore/community/PHP/CodeSniffer.gitignore'
-URL['php_codesniffer']='https://github.com/github/gitignore/community/PHP/CodeSniffer.gitignore'
+URL['php_codesniffer']='https://raw.githubusercontent.com/github/gitignore/master/CodeSniffer.gitignore'
 
 FILE['php_drupal7']='./gitignore/community/PHP/Drupal7.gitignore'
-URL['php_drupal7']='https://github.com/github/gitignore/community/PHP/Drupal7.gitignore'
+URL['php_drupal7']='https://raw.githubusercontent.com/github/gitignore/master/Drupal7.gitignore'
 
 FILE['php_jigsaw']='./gitignore/community/PHP/Jigsaw.gitignore'
-URL['php_jigsaw']='https://github.com/github/gitignore/community/PHP/Jigsaw.gitignore'
+URL['php_jigsaw']='https://raw.githubusercontent.com/github/gitignore/master/Jigsaw.gitignore'
 
 FILE['php_magento1']='./gitignore/community/PHP/Magento1.gitignore'
-URL['php_magento1']='https://github.com/github/gitignore/community/PHP/Magento1.gitignore'
+URL['php_magento1']='https://raw.githubusercontent.com/github/gitignore/master/Magento1.gitignore'
 
 FILE['php_magento2']='./gitignore/community/PHP/Magento2.gitignore'
-URL['php_magento2']='https://github.com/github/gitignore/community/PHP/Magento2.gitignore'
+URL['php_magento2']='https://raw.githubusercontent.com/github/gitignore/master/Magento2.gitignore'
 
 FILE['php_pimcore']='./gitignore/community/PHP/Pimcore.gitignore'
-URL['php_pimcore']='https://github.com/github/gitignore/community/PHP/Pimcore.gitignore'
+URL['php_pimcore']='https://raw.githubusercontent.com/github/gitignore/master/Pimcore.gitignore'
 
 FILE['php_thinkphp']='./gitignore/community/PHP/ThinkPHP.gitignore'
-URL['php_thinkphp']='https://github.com/github/gitignore/community/PHP/ThinkPHP.gitignore'
+URL['php_thinkphp']='https://raw.githubusercontent.com/github/gitignore/master/ThinkPHP.gitignore'
 
 FILE['puppet']='./gitignore/community/Puppet.gitignore'
-URL['puppet']='https://github.com/github/gitignore/community/Puppet.gitignore'
+URL['puppet']='https://raw.githubusercontent.com/github/gitignore/master/Puppet.gitignore'
 
 FILE['python_jupyternotebooks']='./gitignore/community/Python/JupyterNotebooks.gitignore'
-URL['python_jupyternotebooks']='https://github.com/github/gitignore/community/Python/JupyterNotebooks.gitignore'
+URL['python_jupyternotebooks']='https://raw.githubusercontent.com/github/gitignore/master/JupyterNotebooks.gitignore'
 
 FILE['python_nikola']='./gitignore/community/Python/Nikola.gitignore'
-URL['python_nikola']='https://github.com/github/gitignore/community/Python/Nikola.gitignore'
+URL['python_nikola']='https://raw.githubusercontent.com/github/gitignore/master/Nikola.gitignore'
 
 FILE['racket']='./gitignore/community/Racket.gitignore'
-URL['racket']='https://github.com/github/gitignore/community/Racket.gitignore'
+URL['racket']='https://raw.githubusercontent.com/github/gitignore/master/Racket.gitignore'
 
 FILE['red']='./gitignore/community/Red.gitignore'
-URL['red']='https://github.com/github/gitignore/community/Red.gitignore'
+URL['red']='https://raw.githubusercontent.com/github/gitignore/master/Red.gitignore'
 
 FILE['ros2']='./gitignore/community/ROS2.gitignore'
-URL['ros2']='https://github.com/github/gitignore/community/ROS2.gitignore'
+URL['ros2']='https://raw.githubusercontent.com/github/gitignore/master/ROS2.gitignore'
 
 FILE['spfx']='./gitignore/community/SPFx.gitignore'
-URL['spfx']='https://github.com/github/gitignore/community/SPFx.gitignore'
+URL['spfx']='https://raw.githubusercontent.com/github/gitignore/master/SPFx.gitignore'
 
 FILE['splunk']='./gitignore/community/Splunk.gitignore'
-URL['splunk']='https://github.com/github/gitignore/community/Splunk.gitignore'
+URL['splunk']='https://raw.githubusercontent.com/github/gitignore/master/Splunk.gitignore'
 
 FILE['strapi']='./gitignore/community/Strapi.gitignore'
-URL['strapi']='https://github.com/github/gitignore/community/Strapi.gitignore'
+URL['strapi']='https://raw.githubusercontent.com/github/gitignore/master/Strapi.gitignore'
 
 FILE['toit']='./gitignore/community/Toit.gitignore'
-URL['toit']='https://github.com/github/gitignore/community/Toit.gitignore'
+URL['toit']='https://raw.githubusercontent.com/github/gitignore/master/Toit.gitignore'
 
 FILE['v']='./gitignore/community/V.gitignore'
-URL['v']='https://github.com/github/gitignore/community/V.gitignore'
+URL['v']='https://raw.githubusercontent.com/github/gitignore/master/V.gitignore'
 
 FILE['xilinx']='./gitignore/community/Xilinx.gitignore'
-URL['xilinx']='https://github.com/github/gitignore/community/Xilinx.gitignore'
+URL['xilinx']='https://raw.githubusercontent.com/github/gitignore/master/Xilinx.gitignore'
 
 FILE['composer']='./gitignore/Composer.gitignore'
-URL['composer']='https://github.com/github/gitignore/Composer.gitignore'
+URL['composer']='https://raw.githubusercontent.com/github/gitignore/master/Composer.gitignore'
 
 FILE['concrete5']='./gitignore/Concrete5.gitignore'
-URL['concrete5']='https://github.com/github/gitignore/Concrete5.gitignore'
+URL['concrete5']='https://raw.githubusercontent.com/github/gitignore/master/Concrete5.gitignore'
 
 FILE['coq']='./gitignore/Coq.gitignore'
-URL['coq']='https://github.com/github/gitignore/Coq.gitignore'
+URL['coq']='https://raw.githubusercontent.com/github/gitignore/master/Coq.gitignore'
 
 FILE['craftcms']='./gitignore/CraftCMS.gitignore'
-URL['craftcms']='https://github.com/github/gitignore/CraftCMS.gitignore'
+URL['craftcms']='https://raw.githubusercontent.com/github/gitignore/master/CraftCMS.gitignore'
 
 FILE['cuda']='./gitignore/CUDA.gitignore'
-URL['cuda']='https://github.com/github/gitignore/CUDA.gitignore'
+URL['cuda']='https://raw.githubusercontent.com/github/gitignore/master/CUDA.gitignore'
 
 FILE['dart']='./gitignore/Dart.gitignore'
-URL['dart']='https://github.com/github/gitignore/Dart.gitignore'
+URL['dart']='https://raw.githubusercontent.com/github/gitignore/master/Dart.gitignore'
 
 FILE['delphi']='./gitignore/Delphi.gitignore'
-URL['delphi']='https://github.com/github/gitignore/Delphi.gitignore'
+URL['delphi']='https://raw.githubusercontent.com/github/gitignore/master/Delphi.gitignore'
 
 FILE['d']='./gitignore/D.gitignore'
-URL['d']='https://github.com/github/gitignore/D.gitignore'
+URL['d']='https://raw.githubusercontent.com/github/gitignore/master/D.gitignore'
 
 FILE['dm']='./gitignore/DM.gitignore'
-URL['dm']='https://github.com/github/gitignore/DM.gitignore'
+URL['dm']='https://raw.githubusercontent.com/github/gitignore/master/DM.gitignore'
 
 FILE['drupal']='./gitignore/Drupal.gitignore'
-URL['drupal']='https://github.com/github/gitignore/Drupal.gitignore'
+URL['drupal']='https://raw.githubusercontent.com/github/gitignore/master/Drupal.gitignore'
 
 FILE['eagle']='./gitignore/Eagle.gitignore'
-URL['eagle']='https://github.com/github/gitignore/Eagle.gitignore'
+URL['eagle']='https://raw.githubusercontent.com/github/gitignore/master/Eagle.gitignore'
 
 FILE['elisp']='./gitignore/Elisp.gitignore'
-URL['elisp']='https://github.com/github/gitignore/Elisp.gitignore'
+URL['elisp']='https://raw.githubusercontent.com/github/gitignore/master/Elisp.gitignore'
 
 FILE['elixir']='./gitignore/Elixir.gitignore'
-URL['elixir']='https://github.com/github/gitignore/Elixir.gitignore'
+URL['elixir']='https://raw.githubusercontent.com/github/gitignore/master/Elixir.gitignore'
 
 FILE['elm']='./gitignore/Elm.gitignore'
-URL['elm']='https://github.com/github/gitignore/Elm.gitignore'
+URL['elm']='https://raw.githubusercontent.com/github/gitignore/master/Elm.gitignore'
 
 FILE['episerver']='./gitignore/EPiServer.gitignore'
-URL['episerver']='https://github.com/github/gitignore/EPiServer.gitignore'
+URL['episerver']='https://raw.githubusercontent.com/github/gitignore/master/EPiServer.gitignore'
 
 FILE['erlang']='./gitignore/Erlang.gitignore'
-URL['erlang']='https://github.com/github/gitignore/Erlang.gitignore'
+URL['erlang']='https://raw.githubusercontent.com/github/gitignore/master/Erlang.gitignore'
 
 FILE['expressionengine']='./gitignore/ExpressionEngine.gitignore'
-URL['expressionengine']='https://github.com/github/gitignore/ExpressionEngine.gitignore'
+URL['expressionengine']='https://raw.githubusercontent.com/github/gitignore/master/ExpressionEngine.gitignore'
 
 FILE['extjs']='./gitignore/ExtJs.gitignore'
-URL['extjs']='https://github.com/github/gitignore/ExtJs.gitignore'
+URL['extjs']='https://raw.githubusercontent.com/github/gitignore/master/ExtJs.gitignore'
 
 FILE['fancy']='./gitignore/Fancy.gitignore'
-URL['fancy']='https://github.com/github/gitignore/Fancy.gitignore'
+URL['fancy']='https://raw.githubusercontent.com/github/gitignore/master/Fancy.gitignore'
 
 FILE['finale']='./gitignore/Finale.gitignore'
-URL['finale']='https://github.com/github/gitignore/Finale.gitignore'
+URL['finale']='https://raw.githubusercontent.com/github/gitignore/master/Finale.gitignore'
 
 FILE['flaxengine']='./gitignore/FlaxEngine.gitignore'
-URL['flaxengine']='https://github.com/github/gitignore/FlaxEngine.gitignore'
+URL['flaxengine']='https://raw.githubusercontent.com/github/gitignore/master/FlaxEngine.gitignore'
 
 FILE['forcedotcom']='./gitignore/ForceDotCom.gitignore'
-URL['forcedotcom']='https://github.com/github/gitignore/ForceDotCom.gitignore'
+URL['forcedotcom']='https://raw.githubusercontent.com/github/gitignore/master/ForceDotCom.gitignore'
 
 FILE['fuelphp']='./gitignore/FuelPHP.gitignore'
-URL['fuelphp']='https://github.com/github/gitignore/FuelPHP.gitignore'
+URL['fuelphp']='https://raw.githubusercontent.com/github/gitignore/master/FuelPHP.gitignore'
 
 FILE['gcov']='./gitignore/Gcov.gitignore'
-URL['gcov']='https://github.com/github/gitignore/Gcov.gitignore'
+URL['gcov']='https://raw.githubusercontent.com/github/gitignore/master/Gcov.gitignore'
 
 FILE['gitbook']='./gitignore/GitBook.gitignore'
-URL['gitbook']='https://github.com/github/gitignore/GitBook.gitignore'
+URL['gitbook']='https://raw.githubusercontent.com/github/gitignore/master/GitBook.gitignore'
 
 FILE['al']='./gitignore/Global/AL.gitignore'
-URL['al']='https://github.com/github/gitignore/Global/AL.gitignore'
+URL['al']='https://raw.githubusercontent.com/github/gitignore/master/AL.gitignore'
 
 FILE['anjuta']='./gitignore/Global/Anjuta.gitignore'
-URL['anjuta']='https://github.com/github/gitignore/Global/Anjuta.gitignore'
+URL['anjuta']='https://raw.githubusercontent.com/github/gitignore/master/Anjuta.gitignore'
 
 FILE['ansible']='./gitignore/Global/Ansible.gitignore'
-URL['ansible']='https://github.com/github/gitignore/Global/Ansible.gitignore'
+URL['ansible']='https://raw.githubusercontent.com/github/gitignore/master/Ansible.gitignore'
 
 FILE['archives']='./gitignore/Global/Archives.gitignore'
-URL['archives']='https://github.com/github/gitignore/Global/Archives.gitignore'
+URL['archives']='https://raw.githubusercontent.com/github/gitignore/master/Archives.gitignore'
 
 FILE['backup']='./gitignore/Global/Backup.gitignore'
-URL['backup']='https://github.com/github/gitignore/Global/Backup.gitignore'
+URL['backup']='https://raw.githubusercontent.com/github/gitignore/master/Backup.gitignore'
 
 FILE['bazaar']='./gitignore/Global/Bazaar.gitignore'
-URL['bazaar']='https://github.com/github/gitignore/Global/Bazaar.gitignore'
+URL['bazaar']='https://raw.githubusercontent.com/github/gitignore/master/Bazaar.gitignore'
 
 FILE['bricxcc']='./gitignore/Global/BricxCC.gitignore'
-URL['bricxcc']='https://github.com/github/gitignore/Global/BricxCC.gitignore'
+URL['bricxcc']='https://raw.githubusercontent.com/github/gitignore/master/BricxCC.gitignore'
 
 FILE['calabash']='./gitignore/Global/Calabash.gitignore'
-URL['calabash']='https://github.com/github/gitignore/Global/Calabash.gitignore'
+URL['calabash']='https://raw.githubusercontent.com/github/gitignore/master/Calabash.gitignore'
 
 FILE['cloud9']='./gitignore/Global/Cloud9.gitignore'
-URL['cloud9']='https://github.com/github/gitignore/Global/Cloud9.gitignore'
+URL['cloud9']='https://raw.githubusercontent.com/github/gitignore/master/Cloud9.gitignore'
 
 FILE['codekit']='./gitignore/Global/CodeKit.gitignore'
-URL['codekit']='https://github.com/github/gitignore/Global/CodeKit.gitignore'
+URL['codekit']='https://raw.githubusercontent.com/github/gitignore/master/CodeKit.gitignore'
 
 FILE['cvs']='./gitignore/Global/CVS.gitignore'
-URL['cvs']='https://github.com/github/gitignore/Global/CVS.gitignore'
+URL['cvs']='https://raw.githubusercontent.com/github/gitignore/master/CVS.gitignore'
 
 FILE['darteditor']='./gitignore/Global/DartEditor.gitignore'
-URL['darteditor']='https://github.com/github/gitignore/Global/DartEditor.gitignore'
+URL['darteditor']='https://raw.githubusercontent.com/github/gitignore/master/DartEditor.gitignore'
 
 FILE['diff']='./gitignore/Global/Diff.gitignore'
-URL['diff']='https://github.com/github/gitignore/Global/Diff.gitignore'
+URL['diff']='https://raw.githubusercontent.com/github/gitignore/master/Diff.gitignore'
 
 FILE['dreamweaver']='./gitignore/Global/Dreamweaver.gitignore'
-URL['dreamweaver']='https://github.com/github/gitignore/Global/Dreamweaver.gitignore'
+URL['dreamweaver']='https://raw.githubusercontent.com/github/gitignore/master/Dreamweaver.gitignore'
 
 FILE['dropbox']='./gitignore/Global/Dropbox.gitignore'
-URL['dropbox']='https://github.com/github/gitignore/Global/Dropbox.gitignore'
+URL['dropbox']='https://raw.githubusercontent.com/github/gitignore/master/Dropbox.gitignore'
 
 FILE['eclipse']='./gitignore/Global/Eclipse.gitignore'
-URL['eclipse']='https://github.com/github/gitignore/Global/Eclipse.gitignore'
+URL['eclipse']='https://raw.githubusercontent.com/github/gitignore/master/Eclipse.gitignore'
 
 FILE['eiffelstudio']='./gitignore/Global/EiffelStudio.gitignore'
-URL['eiffelstudio']='https://github.com/github/gitignore/Global/EiffelStudio.gitignore'
+URL['eiffelstudio']='https://raw.githubusercontent.com/github/gitignore/master/EiffelStudio.gitignore'
 
 FILE['emacs']='./gitignore/Global/Emacs.gitignore'
-URL['emacs']='https://github.com/github/gitignore/Global/Emacs.gitignore'
+URL['emacs']='https://raw.githubusercontent.com/github/gitignore/master/Emacs.gitignore'
 
 FILE['ensime']='./gitignore/Global/Ensime.gitignore'
-URL['ensime']='https://github.com/github/gitignore/Global/Ensime.gitignore'
+URL['ensime']='https://raw.githubusercontent.com/github/gitignore/master/Ensime.gitignore'
 
 FILE['espresso']='./gitignore/Global/Espresso.gitignore'
-URL['espresso']='https://github.com/github/gitignore/Global/Espresso.gitignore'
+URL['espresso']='https://raw.githubusercontent.com/github/gitignore/master/Espresso.gitignore'
 
 FILE['flexbuilder']='./gitignore/Global/FlexBuilder.gitignore'
-URL['flexbuilder']='https://github.com/github/gitignore/Global/FlexBuilder.gitignore'
+URL['flexbuilder']='https://raw.githubusercontent.com/github/gitignore/master/FlexBuilder.gitignore'
 
 FILE['gpg']='./gitignore/Global/GPG.gitignore'
-URL['gpg']='https://github.com/github/gitignore/Global/GPG.gitignore'
+URL['gpg']='https://raw.githubusercontent.com/github/gitignore/master/GPG.gitignore'
 
 FILE['images']='./gitignore/Global/Images.gitignore'
-URL['images']='https://github.com/github/gitignore/Global/Images.gitignore'
+URL['images']='https://raw.githubusercontent.com/github/gitignore/master/Images.gitignore'
 
 FILE['jdeveloper']='./gitignore/Global/JDeveloper.gitignore'
-URL['jdeveloper']='https://github.com/github/gitignore/Global/JDeveloper.gitignore'
+URL['jdeveloper']='https://raw.githubusercontent.com/github/gitignore/master/JDeveloper.gitignore'
 
 FILE['jenv']='./gitignore/Global/JEnv.gitignore'
-URL['jenv']='https://github.com/github/gitignore/Global/JEnv.gitignore'
+URL['jenv']='https://raw.githubusercontent.com/github/gitignore/master/JEnv.gitignore'
 
 FILE['jetbrains']='./gitignore/Global/JetBrains.gitignore'
-URL['jetbrains']='https://github.com/github/gitignore/Global/JetBrains.gitignore'
+URL['jetbrains']='https://raw.githubusercontent.com/github/gitignore/master/JetBrains.gitignore'
 
 FILE['kate']='./gitignore/Global/Kate.gitignore'
-URL['kate']='https://github.com/github/gitignore/Global/Kate.gitignore'
+URL['kate']='https://raw.githubusercontent.com/github/gitignore/master/Kate.gitignore'
 
 FILE['kdevelop4']='./gitignore/Global/KDevelop4.gitignore'
-URL['kdevelop4']='https://github.com/github/gitignore/Global/KDevelop4.gitignore'
+URL['kdevelop4']='https://raw.githubusercontent.com/github/gitignore/master/KDevelop4.gitignore'
 
 FILE['lazarus']='./gitignore/Global/Lazarus.gitignore'
-URL['lazarus']='https://github.com/github/gitignore/Global/Lazarus.gitignore'
+URL['lazarus']='https://raw.githubusercontent.com/github/gitignore/master/Lazarus.gitignore'
 
 FILE['libreoffice']='./gitignore/Global/LibreOffice.gitignore'
-URL['libreoffice']='https://github.com/github/gitignore/Global/LibreOffice.gitignore'
+URL['libreoffice']='https://raw.githubusercontent.com/github/gitignore/master/LibreOffice.gitignore'
 
 FILE['linux']='./gitignore/Global/Linux.gitignore'
-URL['linux']='https://github.com/github/gitignore/Global/Linux.gitignore'
+URL['linux']='https://raw.githubusercontent.com/github/gitignore/master/Linux.gitignore'
 
 FILE['lyx']='./gitignore/Global/LyX.gitignore'
-URL['lyx']='https://github.com/github/gitignore/Global/LyX.gitignore'
+URL['lyx']='https://raw.githubusercontent.com/github/gitignore/master/LyX.gitignore'
 
 FILE['macos']='./gitignore/Global/macOS.gitignore'
-URL['macos']='https://github.com/github/gitignore/Global/macOS.gitignore'
+URL['macos']='https://raw.githubusercontent.com/github/gitignore/master/macOS.gitignore'
 
 FILE['matlab']='./gitignore/Global/MATLAB.gitignore'
-URL['matlab']='https://github.com/github/gitignore/Global/MATLAB.gitignore'
+URL['matlab']='https://raw.githubusercontent.com/github/gitignore/master/MATLAB.gitignore'
 
 FILE['mercurial']='./gitignore/Global/Mercurial.gitignore'
-URL['mercurial']='https://github.com/github/gitignore/Global/Mercurial.gitignore'
+URL['mercurial']='https://raw.githubusercontent.com/github/gitignore/master/Mercurial.gitignore'
 
 FILE['metals']='./gitignore/Global/Metals.gitignore'
-URL['metals']='https://github.com/github/gitignore/Global/Metals.gitignore'
+URL['metals']='https://raw.githubusercontent.com/github/gitignore/master/Metals.gitignore'
 
 FILE['microsoftoffice']='./gitignore/Global/MicrosoftOffice.gitignore'
-URL['microsoftoffice']='https://github.com/github/gitignore/Global/MicrosoftOffice.gitignore'
+URL['microsoftoffice']='https://raw.githubusercontent.com/github/gitignore/master/MicrosoftOffice.gitignore'
 
 FILE['modelsim']='./gitignore/Global/ModelSim.gitignore'
-URL['modelsim']='https://github.com/github/gitignore/Global/ModelSim.gitignore'
+URL['modelsim']='https://raw.githubusercontent.com/github/gitignore/master/ModelSim.gitignore'
 
 FILE['momentics']='./gitignore/Global/Momentics.gitignore'
-URL['momentics']='https://github.com/github/gitignore/Global/Momentics.gitignore'
+URL['momentics']='https://raw.githubusercontent.com/github/gitignore/master/Momentics.gitignore'
 
 FILE['monodevelop']='./gitignore/Global/MonoDevelop.gitignore'
-URL['monodevelop']='https://github.com/github/gitignore/Global/MonoDevelop.gitignore'
+URL['monodevelop']='https://raw.githubusercontent.com/github/gitignore/master/MonoDevelop.gitignore'
 
 FILE['netbeans']='./gitignore/Global/NetBeans.gitignore'
-URL['netbeans']='https://github.com/github/gitignore/Global/NetBeans.gitignore'
+URL['netbeans']='https://raw.githubusercontent.com/github/gitignore/master/NetBeans.gitignore'
 
 FILE['ninja']='./gitignore/Global/Ninja.gitignore'
-URL['ninja']='https://github.com/github/gitignore/Global/Ninja.gitignore'
+URL['ninja']='https://raw.githubusercontent.com/github/gitignore/master/Ninja.gitignore'
 
 FILE['notepadpp']='./gitignore/Global/NotepadPP.gitignore'
-URL['notepadpp']='https://github.com/github/gitignore/Global/NotepadPP.gitignore'
+URL['notepadpp']='https://raw.githubusercontent.com/github/gitignore/master/NotepadPP.gitignore'
 
 FILE['otto']='./gitignore/Global/Otto.gitignore'
-URL['otto']='https://github.com/github/gitignore/Global/Otto.gitignore'
+URL['otto']='https://raw.githubusercontent.com/github/gitignore/master/Otto.gitignore'
 
 FILE['patch']='./gitignore/Global/Patch.gitignore'
-URL['patch']='https://github.com/github/gitignore/Global/Patch.gitignore'
+URL['patch']='https://raw.githubusercontent.com/github/gitignore/master/Patch.gitignore'
 
 FILE['psoccreator']='./gitignore/Global/PSoCCreator.gitignore'
-URL['psoccreator']='https://github.com/github/gitignore/Global/PSoCCreator.gitignore'
+URL['psoccreator']='https://raw.githubusercontent.com/github/gitignore/master/PSoCCreator.gitignore'
 
 FILE['putty']='./gitignore/Global/PuTTY.gitignore'
-URL['putty']='https://github.com/github/gitignore/Global/PuTTY.gitignore'
+URL['putty']='https://raw.githubusercontent.com/github/gitignore/master/PuTTY.gitignore'
 
 FILE['redcar']='./gitignore/Global/Redcar.gitignore'
-URL['redcar']='https://github.com/github/gitignore/Global/Redcar.gitignore'
+URL['redcar']='https://raw.githubusercontent.com/github/gitignore/master/Redcar.gitignore'
 
 FILE['redis']='./gitignore/Global/Redis.gitignore'
-URL['redis']='https://github.com/github/gitignore/Global/Redis.gitignore'
+URL['redis']='https://raw.githubusercontent.com/github/gitignore/master/Redis.gitignore'
 
 FILE['sbt']='./gitignore/Global/SBT.gitignore'
-URL['sbt']='https://github.com/github/gitignore/Global/SBT.gitignore'
+URL['sbt']='https://raw.githubusercontent.com/github/gitignore/master/SBT.gitignore'
 
 FILE['slickedit']='./gitignore/Global/SlickEdit.gitignore'
-URL['slickedit']='https://github.com/github/gitignore/Global/SlickEdit.gitignore'
+URL['slickedit']='https://raw.githubusercontent.com/github/gitignore/master/SlickEdit.gitignore'
 
 FILE['stata']='./gitignore/Global/Stata.gitignore'
-URL['stata']='https://github.com/github/gitignore/Global/Stata.gitignore'
+URL['stata']='https://raw.githubusercontent.com/github/gitignore/master/Stata.gitignore'
 
 FILE['sublimetext']='./gitignore/Global/SublimeText.gitignore'
-URL['sublimetext']='https://github.com/github/gitignore/Global/SublimeText.gitignore'
+URL['sublimetext']='https://raw.githubusercontent.com/github/gitignore/master/SublimeText.gitignore'
 
 FILE['svn']='./gitignore/Global/SVN.gitignore'
-URL['svn']='https://github.com/github/gitignore/Global/SVN.gitignore'
+URL['svn']='https://raw.githubusercontent.com/github/gitignore/master/SVN.gitignore'
 
 FILE['syncthing']='./gitignore/Global/Syncthing.gitignore'
-URL['syncthing']='https://github.com/github/gitignore/Global/Syncthing.gitignore'
+URL['syncthing']='https://raw.githubusercontent.com/github/gitignore/master/Syncthing.gitignore'
 
 FILE['synopsysvcs']='./gitignore/Global/SynopsysVCS.gitignore'
-URL['synopsysvcs']='https://github.com/github/gitignore/Global/SynopsysVCS.gitignore'
+URL['synopsysvcs']='https://raw.githubusercontent.com/github/gitignore/master/SynopsysVCS.gitignore'
 
 FILE['tags']='./gitignore/Global/Tags.gitignore'
-URL['tags']='https://github.com/github/gitignore/Global/Tags.gitignore'
+URL['tags']='https://raw.githubusercontent.com/github/gitignore/master/Tags.gitignore'
 
 FILE['textmate']='./gitignore/Global/TextMate.gitignore'
-URL['textmate']='https://github.com/github/gitignore/Global/TextMate.gitignore'
+URL['textmate']='https://raw.githubusercontent.com/github/gitignore/master/TextMate.gitignore'
 
 FILE['tortoisegit']='./gitignore/Global/TortoiseGit.gitignore'
-URL['tortoisegit']='https://github.com/github/gitignore/Global/TortoiseGit.gitignore'
+URL['tortoisegit']='https://raw.githubusercontent.com/github/gitignore/master/TortoiseGit.gitignore'
 
 FILE['vagrant']='./gitignore/Global/Vagrant.gitignore'
-URL['vagrant']='https://github.com/github/gitignore/Global/Vagrant.gitignore'
+URL['vagrant']='https://raw.githubusercontent.com/github/gitignore/master/Vagrant.gitignore'
 
 FILE['vim']='./gitignore/Global/Vim.gitignore'
-URL['vim']='https://github.com/github/gitignore/Global/Vim.gitignore'
+URL['vim']='https://raw.githubusercontent.com/github/gitignore/master/Vim.gitignore'
 
 FILE['virtualenv']='./gitignore/Global/VirtualEnv.gitignore'
-URL['virtualenv']='https://github.com/github/gitignore/Global/VirtualEnv.gitignore'
+URL['virtualenv']='https://raw.githubusercontent.com/github/gitignore/master/VirtualEnv.gitignore'
 
 FILE['virtuoso']='./gitignore/Global/Virtuoso.gitignore'
-URL['virtuoso']='https://github.com/github/gitignore/Global/Virtuoso.gitignore'
+URL['virtuoso']='https://raw.githubusercontent.com/github/gitignore/master/Virtuoso.gitignore'
 
 FILE['visualstudiocode']='./gitignore/Global/VisualStudioCode.gitignore'
-URL['visualstudiocode']='https://github.com/github/gitignore/Global/VisualStudioCode.gitignore'
+URL['visualstudiocode']='https://raw.githubusercontent.com/github/gitignore/master/VisualStudioCode.gitignore'
 
 FILE['webmethods']='./gitignore/Global/WebMethods.gitignore'
-URL['webmethods']='https://github.com/github/gitignore/Global/WebMethods.gitignore'
+URL['webmethods']='https://raw.githubusercontent.com/github/gitignore/master/WebMethods.gitignore'
 
 FILE['windows']='./gitignore/Global/Windows.gitignore'
-URL['windows']='https://github.com/github/gitignore/Global/Windows.gitignore'
+URL['windows']='https://raw.githubusercontent.com/github/gitignore/master/Windows.gitignore'
 
 FILE['xcode']='./gitignore/Global/Xcode.gitignore'
-URL['xcode']='https://github.com/github/gitignore/Global/Xcode.gitignore'
+URL['xcode']='https://raw.githubusercontent.com/github/gitignore/master/Xcode.gitignore'
 
 FILE['xilinxise']='./gitignore/Global/XilinxISE.gitignore'
-URL['xilinxise']='https://github.com/github/gitignore/Global/XilinxISE.gitignore'
+URL['xilinxise']='https://raw.githubusercontent.com/github/gitignore/master/XilinxISE.gitignore'
 
 FILE['godot']='./gitignore/Godot.gitignore'
-URL['godot']='https://github.com/github/gitignore/Godot.gitignore'
+URL['godot']='https://raw.githubusercontent.com/github/gitignore/master/Godot.gitignore'
 
 FILE['go']='./gitignore/Go.gitignore'
-URL['go']='https://github.com/github/gitignore/Go.gitignore'
+URL['go']='https://raw.githubusercontent.com/github/gitignore/master/Go.gitignore'
 
 FILE['gradle']='./gitignore/Gradle.gitignore'
-URL['gradle']='https://github.com/github/gitignore/Gradle.gitignore'
+URL['gradle']='https://raw.githubusercontent.com/github/gitignore/master/Gradle.gitignore'
 
 FILE['grails']='./gitignore/Grails.gitignore'
-URL['grails']='https://github.com/github/gitignore/Grails.gitignore'
+URL['grails']='https://raw.githubusercontent.com/github/gitignore/master/Grails.gitignore'
 
 FILE['gwt']='./gitignore/GWT.gitignore'
-URL['gwt']='https://github.com/github/gitignore/GWT.gitignore'
+URL['gwt']='https://raw.githubusercontent.com/github/gitignore/master/GWT.gitignore'
 
 FILE['haskell']='./gitignore/Haskell.gitignore'
-URL['haskell']='https://github.com/github/gitignore/Haskell.gitignore'
+URL['haskell']='https://raw.githubusercontent.com/github/gitignore/master/Haskell.gitignore'
 
 FILE['idris']='./gitignore/Idris.gitignore'
-URL['idris']='https://github.com/github/gitignore/Idris.gitignore'
+URL['idris']='https://raw.githubusercontent.com/github/gitignore/master/Idris.gitignore'
 
 FILE['igorpro']='./gitignore/IGORPro.gitignore'
-URL['igorpro']='https://github.com/github/gitignore/IGORPro.gitignore'
+URL['igorpro']='https://raw.githubusercontent.com/github/gitignore/master/IGORPro.gitignore'
 
 FILE['java']='./gitignore/Java.gitignore'
-URL['java']='https://github.com/github/gitignore/Java.gitignore'
+URL['java']='https://raw.githubusercontent.com/github/gitignore/master/Java.gitignore'
 
 FILE['jboss']='./gitignore/JBoss.gitignore'
-URL['jboss']='https://github.com/github/gitignore/JBoss.gitignore'
+URL['jboss']='https://raw.githubusercontent.com/github/gitignore/master/JBoss.gitignore'
 
 FILE['jekyll']='./gitignore/Jekyll.gitignore'
-URL['jekyll']='https://github.com/github/gitignore/Jekyll.gitignore'
+URL['jekyll']='https://raw.githubusercontent.com/github/gitignore/master/Jekyll.gitignore'
 
 FILE['jenkins_home']='./gitignore/JENKINS_HOME.gitignore'
-URL['jenkins_home']='https://github.com/github/gitignore/JENKINS_HOME.gitignore'
+URL['jenkins_home']='https://raw.githubusercontent.com/github/gitignore/master/JENKINS_HOME.gitignore'
 
 FILE['joomla']='./gitignore/Joomla.gitignore'
-URL['joomla']='https://github.com/github/gitignore/Joomla.gitignore'
+URL['joomla']='https://raw.githubusercontent.com/github/gitignore/master/Joomla.gitignore'
 
 FILE['julia']='./gitignore/Julia.gitignore'
-URL['julia']='https://github.com/github/gitignore/Julia.gitignore'
+URL['julia']='https://raw.githubusercontent.com/github/gitignore/master/Julia.gitignore'
 
 FILE['kicad']='./gitignore/KiCad.gitignore'
-URL['kicad']='https://github.com/github/gitignore/KiCad.gitignore'
+URL['kicad']='https://raw.githubusercontent.com/github/gitignore/master/KiCad.gitignore'
 
 FILE['kohana']='./gitignore/Kohana.gitignore'
-URL['kohana']='https://github.com/github/gitignore/Kohana.gitignore'
+URL['kohana']='https://raw.githubusercontent.com/github/gitignore/master/Kohana.gitignore'
 
 FILE['labview']='./gitignore/LabVIEW.gitignore'
-URL['labview']='https://github.com/github/gitignore/LabVIEW.gitignore'
+URL['labview']='https://raw.githubusercontent.com/github/gitignore/master/LabVIEW.gitignore'
 
 FILE['laravel']='./gitignore/Laravel.gitignore'
-URL['laravel']='https://github.com/github/gitignore/Laravel.gitignore'
+URL['laravel']='https://raw.githubusercontent.com/github/gitignore/master/Laravel.gitignore'
 
 FILE['leiningen']='./gitignore/Leiningen.gitignore'
-URL['leiningen']='https://github.com/github/gitignore/Leiningen.gitignore'
+URL['leiningen']='https://raw.githubusercontent.com/github/gitignore/master/Leiningen.gitignore'
 
 FILE['lemonstand']='./gitignore/LemonStand.gitignore'
-URL['lemonstand']='https://github.com/github/gitignore/LemonStand.gitignore'
+URL['lemonstand']='https://raw.githubusercontent.com/github/gitignore/master/LemonStand.gitignore'
 
 FILE['lilypond']='./gitignore/Lilypond.gitignore'
-URL['lilypond']='https://github.com/github/gitignore/Lilypond.gitignore'
+URL['lilypond']='https://raw.githubusercontent.com/github/gitignore/master/Lilypond.gitignore'
 
 FILE['lithium']='./gitignore/Lithium.gitignore'
-URL['lithium']='https://github.com/github/gitignore/Lithium.gitignore'
+URL['lithium']='https://raw.githubusercontent.com/github/gitignore/master/Lithium.gitignore'
 
 FILE['lua']='./gitignore/Lua.gitignore'
-URL['lua']='https://github.com/github/gitignore/Lua.gitignore'
+URL['lua']='https://raw.githubusercontent.com/github/gitignore/master/Lua.gitignore'
 
 FILE['magento']='./gitignore/Magento.gitignore'
-URL['magento']='https://github.com/github/gitignore/Magento.gitignore'
+URL['magento']='https://raw.githubusercontent.com/github/gitignore/master/Magento.gitignore'
 
 FILE['maven']='./gitignore/Maven.gitignore'
-URL['maven']='https://github.com/github/gitignore/Maven.gitignore'
+URL['maven']='https://raw.githubusercontent.com/github/gitignore/master/Maven.gitignore'
 
 FILE['mercury']='./gitignore/Mercury.gitignore'
-URL['mercury']='https://github.com/github/gitignore/Mercury.gitignore'
+URL['mercury']='https://raw.githubusercontent.com/github/gitignore/master/Mercury.gitignore'
 
 FILE['metaprogrammingsystem']='./gitignore/MetaProgrammingSystem.gitignore'
-URL['metaprogrammingsystem']='https://github.com/github/gitignore/MetaProgrammingSystem.gitignore'
+URL['metaprogrammingsystem']='https://raw.githubusercontent.com/github/gitignore/master/MetaProgrammingSystem.gitignore'
 
 FILE['nanoc']='./gitignore/Nanoc.gitignore'
-URL['nanoc']='https://github.com/github/gitignore/Nanoc.gitignore'
+URL['nanoc']='https://raw.githubusercontent.com/github/gitignore/master/Nanoc.gitignore'
 
 FILE['nim']='./gitignore/Nim.gitignore'
-URL['nim']='https://github.com/github/gitignore/Nim.gitignore'
+URL['nim']='https://raw.githubusercontent.com/github/gitignore/master/Nim.gitignore'
 
 FILE['node']='./gitignore/Node.gitignore'
-URL['node']='https://github.com/github/gitignore/Node.gitignore'
+URL['node']='https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore'
 
 FILE['objective-c']='./gitignore/Objective-C.gitignore'
-URL['objective-c']='https://github.com/github/gitignore/Objective-C.gitignore'
+URL['objective-c']='https://raw.githubusercontent.com/github/gitignore/master/Objective-C.gitignore'
 
 FILE['ocaml']='./gitignore/OCaml.gitignore'
-URL['ocaml']='https://github.com/github/gitignore/OCaml.gitignore'
+URL['ocaml']='https://raw.githubusercontent.com/github/gitignore/master/OCaml.gitignore'
 
 FILE['opa']='./gitignore/Opa.gitignore'
-URL['opa']='https://github.com/github/gitignore/Opa.gitignore'
+URL['opa']='https://raw.githubusercontent.com/github/gitignore/master/Opa.gitignore'
 
 FILE['opencart']='./gitignore/OpenCart.gitignore'
-URL['opencart']='https://github.com/github/gitignore/OpenCart.gitignore'
+URL['opencart']='https://raw.githubusercontent.com/github/gitignore/master/OpenCart.gitignore'
 
 FILE['oracleforms']='./gitignore/OracleForms.gitignore'
-URL['oracleforms']='https://github.com/github/gitignore/OracleForms.gitignore'
+URL['oracleforms']='https://raw.githubusercontent.com/github/gitignore/master/OracleForms.gitignore'
 
 FILE['packer']='./gitignore/Packer.gitignore'
-URL['packer']='https://github.com/github/gitignore/Packer.gitignore'
+URL['packer']='https://raw.githubusercontent.com/github/gitignore/master/Packer.gitignore'
 
 FILE['perl']='./gitignore/Perl.gitignore'
-URL['perl']='https://github.com/github/gitignore/Perl.gitignore'
+URL['perl']='https://raw.githubusercontent.com/github/gitignore/master/Perl.gitignore'
 
 FILE['phalcon']='./gitignore/Phalcon.gitignore'
-URL['phalcon']='https://github.com/github/gitignore/Phalcon.gitignore'
+URL['phalcon']='https://raw.githubusercontent.com/github/gitignore/master/Phalcon.gitignore'
 
 FILE['playframework']='./gitignore/PlayFramework.gitignore'
-URL['playframework']='https://github.com/github/gitignore/PlayFramework.gitignore'
+URL['playframework']='https://raw.githubusercontent.com/github/gitignore/master/PlayFramework.gitignore'
 
 FILE['plone']='./gitignore/Plone.gitignore'
-URL['plone']='https://github.com/github/gitignore/Plone.gitignore'
+URL['plone']='https://raw.githubusercontent.com/github/gitignore/master/Plone.gitignore'
 
 FILE['prestashop']='./gitignore/Prestashop.gitignore'
-URL['prestashop']='https://github.com/github/gitignore/Prestashop.gitignore'
+URL['prestashop']='https://raw.githubusercontent.com/github/gitignore/master/Prestashop.gitignore'
 
 FILE['processing']='./gitignore/Processing.gitignore'
-URL['processing']='https://github.com/github/gitignore/Processing.gitignore'
+URL['processing']='https://raw.githubusercontent.com/github/gitignore/master/Processing.gitignore'
 
 FILE['purescript']='./gitignore/PureScript.gitignore'
-URL['purescript']='https://github.com/github/gitignore/PureScript.gitignore'
+URL['purescript']='https://raw.githubusercontent.com/github/gitignore/master/PureScript.gitignore'
 
 FILE['python']='./gitignore/Python.gitignore'
-URL['python']='https://github.com/github/gitignore/Python.gitignore'
+URL['python']='https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore'
 
 FILE['qooxdoo']='./gitignore/Qooxdoo.gitignore'
-URL['qooxdoo']='https://github.com/github/gitignore/Qooxdoo.gitignore'
+URL['qooxdoo']='https://raw.githubusercontent.com/github/gitignore/master/Qooxdoo.gitignore'
 
 FILE['qt']='./gitignore/Qt.gitignore'
-URL['qt']='https://github.com/github/gitignore/Qt.gitignore'
+URL['qt']='https://raw.githubusercontent.com/github/gitignore/master/Qt.gitignore'
 
 FILE['racket']='./gitignore/Racket.gitignore'
-URL['racket']='https://github.com/github/gitignore/Racket.gitignore'
+URL['racket']='https://raw.githubusercontent.com/github/gitignore/master/Racket.gitignore'
 
 FILE['rails']='./gitignore/Rails.gitignore'
-URL['rails']='https://github.com/github/gitignore/Rails.gitignore'
+URL['rails']='https://raw.githubusercontent.com/github/gitignore/master/Rails.gitignore'
 
 FILE['raku']='./gitignore/Raku.gitignore'
-URL['raku']='https://github.com/github/gitignore/Raku.gitignore'
+URL['raku']='https://raw.githubusercontent.com/github/gitignore/master/Raku.gitignore'
 
 FILE['r']='./gitignore/R.gitignore'
-URL['r']='https://github.com/github/gitignore/R.gitignore'
+URL['r']='https://raw.githubusercontent.com/github/gitignore/master/R.gitignore'
 
 FILE['rhodesrhomobile']='./gitignore/RhodesRhomobile.gitignore'
-URL['rhodesrhomobile']='https://github.com/github/gitignore/RhodesRhomobile.gitignore'
+URL['rhodesrhomobile']='https://raw.githubusercontent.com/github/gitignore/master/RhodesRhomobile.gitignore'
 
 FILE['ros']='./gitignore/ROS.gitignore'
-URL['ros']='https://github.com/github/gitignore/ROS.gitignore'
+URL['ros']='https://raw.githubusercontent.com/github/gitignore/master/ROS.gitignore'
 
 FILE['ruby']='./gitignore/Ruby.gitignore'
-URL['ruby']='https://github.com/github/gitignore/Ruby.gitignore'
+URL['ruby']='https://raw.githubusercontent.com/github/gitignore/master/Ruby.gitignore'
 
 FILE['rust']='./gitignore/Rust.gitignore'
-URL['rust']='https://github.com/github/gitignore/Rust.gitignore'
+URL['rust']='https://raw.githubusercontent.com/github/gitignore/master/Rust.gitignore'
 
 FILE['sass']='./gitignore/Sass.gitignore'
-URL['sass']='https://github.com/github/gitignore/Sass.gitignore'
+URL['sass']='https://raw.githubusercontent.com/github/gitignore/master/Sass.gitignore'
 
 FILE['scala']='./gitignore/Scala.gitignore'
-URL['scala']='https://github.com/github/gitignore/Scala.gitignore'
+URL['scala']='https://raw.githubusercontent.com/github/gitignore/master/Scala.gitignore'
 
 FILE['scheme']='./gitignore/Scheme.gitignore'
-URL['scheme']='https://github.com/github/gitignore/Scheme.gitignore'
+URL['scheme']='https://raw.githubusercontent.com/github/gitignore/master/Scheme.gitignore'
 
 FILE['scons']='./gitignore/SCons.gitignore'
-URL['scons']='https://github.com/github/gitignore/SCons.gitignore'
+URL['scons']='https://raw.githubusercontent.com/github/gitignore/master/SCons.gitignore'
 
 FILE['scrivener']='./gitignore/Scrivener.gitignore'
-URL['scrivener']='https://github.com/github/gitignore/Scrivener.gitignore'
+URL['scrivener']='https://raw.githubusercontent.com/github/gitignore/master/Scrivener.gitignore'
 
 FILE['sdcc']='./gitignore/Sdcc.gitignore'
-URL['sdcc']='https://github.com/github/gitignore/Sdcc.gitignore'
+URL['sdcc']='https://raw.githubusercontent.com/github/gitignore/master/Sdcc.gitignore'
 
 FILE['seamgen']='./gitignore/SeamGen.gitignore'
-URL['seamgen']='https://github.com/github/gitignore/SeamGen.gitignore'
+URL['seamgen']='https://raw.githubusercontent.com/github/gitignore/master/SeamGen.gitignore'
 
 FILE['sketchup']='./gitignore/SketchUp.gitignore'
-URL['sketchup']='https://github.com/github/gitignore/SketchUp.gitignore'
+URL['sketchup']='https://raw.githubusercontent.com/github/gitignore/master/SketchUp.gitignore'
 
 FILE['smalltalk']='./gitignore/Smalltalk.gitignore'
-URL['smalltalk']='https://github.com/github/gitignore/Smalltalk.gitignore'
+URL['smalltalk']='https://raw.githubusercontent.com/github/gitignore/master/Smalltalk.gitignore'
 
 FILE['stella']='./gitignore/Stella.gitignore'
-URL['stella']='https://github.com/github/gitignore/Stella.gitignore'
+URL['stella']='https://raw.githubusercontent.com/github/gitignore/master/Stella.gitignore'
 
 FILE['sugarcrm']='./gitignore/SugarCRM.gitignore'
-URL['sugarcrm']='https://github.com/github/gitignore/SugarCRM.gitignore'
+URL['sugarcrm']='https://raw.githubusercontent.com/github/gitignore/master/SugarCRM.gitignore'
 
 FILE['swift']='./gitignore/Swift.gitignore'
-URL['swift']='https://github.com/github/gitignore/Swift.gitignore'
+URL['swift']='https://raw.githubusercontent.com/github/gitignore/master/Swift.gitignore'
 
 FILE['symfony']='./gitignore/Symfony.gitignore'
-URL['symfony']='https://github.com/github/gitignore/Symfony.gitignore'
+URL['symfony']='https://raw.githubusercontent.com/github/gitignore/master/Symfony.gitignore'
 
 FILE['symphonycms']='./gitignore/SymphonyCMS.gitignore'
-URL['symphonycms']='https://github.com/github/gitignore/SymphonyCMS.gitignore'
+URL['symphonycms']='https://raw.githubusercontent.com/github/gitignore/master/SymphonyCMS.gitignore'
 
 FILE['terraform']='./gitignore/Terraform.gitignore'
-URL['terraform']='https://github.com/github/gitignore/Terraform.gitignore'
+URL['terraform']='https://raw.githubusercontent.com/github/gitignore/master/Terraform.gitignore'
 
 FILE['tex']='./gitignore/TeX.gitignore'
-URL['tex']='https://github.com/github/gitignore/TeX.gitignore'
+URL['tex']='https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore'
 
 FILE['textpattern']='./gitignore/Textpattern.gitignore'
-URL['textpattern']='https://github.com/github/gitignore/Textpattern.gitignore'
+URL['textpattern']='https://raw.githubusercontent.com/github/gitignore/master/Textpattern.gitignore'
 
 FILE['turbogears2']='./gitignore/TurboGears2.gitignore'
-URL['turbogears2']='https://github.com/github/gitignore/TurboGears2.gitignore'
+URL['turbogears2']='https://raw.githubusercontent.com/github/gitignore/master/TurboGears2.gitignore'
 
 FILE['twincat3']='./gitignore/TwinCAT3.gitignore'
-URL['twincat3']='https://github.com/github/gitignore/TwinCAT3.gitignore'
+URL['twincat3']='https://raw.githubusercontent.com/github/gitignore/master/TwinCAT3.gitignore'
 
 FILE['typo3']='./gitignore/Typo3.gitignore'
-URL['typo3']='https://github.com/github/gitignore/Typo3.gitignore'
+URL['typo3']='https://raw.githubusercontent.com/github/gitignore/master/Typo3.gitignore'
 
 FILE['unity']='./gitignore/Unity.gitignore'
-URL['unity']='https://github.com/github/gitignore/Unity.gitignore'
+URL['unity']='https://raw.githubusercontent.com/github/gitignore/master/Unity.gitignore'
 
 FILE['unrealengine']='./gitignore/UnrealEngine.gitignore'
-URL['unrealengine']='https://github.com/github/gitignore/UnrealEngine.gitignore'
+URL['unrealengine']='https://raw.githubusercontent.com/github/gitignore/master/UnrealEngine.gitignore'
 
 FILE['visualstudio']='./gitignore/VisualStudio.gitignore'
-URL['visualstudio']='https://github.com/github/gitignore/VisualStudio.gitignore'
+URL['visualstudio']='https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore'
 
 FILE['vvvv']='./gitignore/VVVV.gitignore'
-URL['vvvv']='https://github.com/github/gitignore/VVVV.gitignore'
+URL['vvvv']='https://raw.githubusercontent.com/github/gitignore/master/VVVV.gitignore'
 
 FILE['waf']='./gitignore/Waf.gitignore'
-URL['waf']='https://github.com/github/gitignore/Waf.gitignore'
+URL['waf']='https://raw.githubusercontent.com/github/gitignore/master/Waf.gitignore'
 
 FILE['wordpress']='./gitignore/WordPress.gitignore'
-URL['wordpress']='https://github.com/github/gitignore/WordPress.gitignore'
+URL['wordpress']='https://raw.githubusercontent.com/github/gitignore/master/WordPress.gitignore'
 
 FILE['xojo']='./gitignore/Xojo.gitignore'
-URL['xojo']='https://github.com/github/gitignore/Xojo.gitignore'
+URL['xojo']='https://raw.githubusercontent.com/github/gitignore/master/Xojo.gitignore'
 
 FILE['yeoman']='./gitignore/Yeoman.gitignore'
-URL['yeoman']='https://github.com/github/gitignore/Yeoman.gitignore'
+URL['yeoman']='https://raw.githubusercontent.com/github/gitignore/master/Yeoman.gitignore'
 
 FILE['yii']='./gitignore/Yii.gitignore'
-URL['yii']='https://github.com/github/gitignore/Yii.gitignore'
+URL['yii']='https://raw.githubusercontent.com/github/gitignore/master/Yii.gitignore'
 
 FILE['zendframework']='./gitignore/ZendFramework.gitignore'
-URL['zendframework']='https://github.com/github/gitignore/ZendFramework.gitignore'
+URL['zendframework']='https://raw.githubusercontent.com/github/gitignore/master/ZendFramework.gitignore'
 
 FILE['zephir']='./gitignore/Zephir.gitignore'
-URL['zephir']='https://github.com/github/gitignore/Zephir.gitignore'
+URL['zephir']='https://raw.githubusercontent.com/github/gitignore/master/Zephir.gitignore'
 
 export FILE
 export URL
