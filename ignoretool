@@ -396,7 +396,7 @@ function print_usage() {
   show_listitem "  -k              (optional) backup exisint .gitignore before writing new one"
 }
 
-DEFAULTS=(archives backup diff emacs linux macos sublimetext vim visualstudio windows xcode)
+DEFAULTS=(archives backup diff linux macos patch windows)
 
 if [ "${#}" -eq 0 ]; then
   show_error "ERROR: No parameters given. Exiting." >&2
