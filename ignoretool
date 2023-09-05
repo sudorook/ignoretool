@@ -96,7 +96,7 @@ function print_section() {
   local u
   f="${FILE["${key}"]}"
   u="${URL["${key}"]}"
-  if [ -f "${f}" ]; then
+  if [ -f "${ROOT}/${f}" ]; then
     cat << EOF
 
 #
