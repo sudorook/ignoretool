@@ -65,7 +65,7 @@ function list_gitignores() {
         echo
       done <<< "$(find "./${dir}" -type f -name "*.gitignore" | sort -d -f)"
     else
-      show_warning "WARNING: ${dir@Q} not found. Skipping."
+      show_warning "WARNING: ${dir@Q} not found. Skipping." >&2
       continue
     fi
   done
