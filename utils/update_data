@@ -26,6 +26,7 @@ function list_gitignores() {
   local host
   local acct
   local repo
+  local filepath
   for dir in "${DIRS[@]}"; do
     if [ -d "${dir}" ]; then
       while read -r file; do
@@ -39,18 +40,20 @@ function list_gitignores() {
         host="$(dirname "${remote}")"
         acct="$(basename "${host}")"
         host="$(dirname "${host}")"
+        filepath="${file//${dir}\//}"
+        filepath="${filepath//\.\//}"
         case "${host}" in
           https://github.com | github.com)
             host="https://raw.githubusercontent.com"
-            url="${host}/${acct}/${repo}/${branch}/$(basename "${file}")"
+            url="${host}/${acct}/${repo}/${branch}/${filepath}"
             ;;
           https://gitlab.com | gitlab.com)
             host="https://gitlab.com"
-            url="${host}/${acct}/${repo}/-/raw/${branch}/$(basename "${file}")"
+            url="${host}/${acct}/${repo}/-/raw/${branch}/${filepath}"
             ;;
           https://codeberg.org | codeberg.org)
             host="https://codeberg.org"
-            url="${host}/${acct}/${repo}/raw/branch/${branch}/$(basename "${file}")"
+            url="${host}/${acct}/${repo}/raw/branch/${branch}/${filepath}"
             ;;
           *)
             show_error "WARNING: ${file@Q} unsupported. Skipping." >&2
