@@ -10,7 +10,7 @@ DIRS=(gitignore)
 
 source "${ROOT}/globals"
 
-! check_command find git && exit 3
+! check_command find git sed && exit 3
 
 #
 # Functions

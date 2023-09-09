@@ -6,7 +6,7 @@ ROOT="$(readlink -f "$(dirname "${0}")")"
 source "${ROOT}"/data
 source "${ROOT}"/globals
 
-! check_command curl file fzf git xargs && exit 3
+! check_command curl file fzf git sed xargs && exit 3
 
 # Parse string (either space- or comma-delimited). If all the given keys match
 # entries in the PATH and URL arrays, then set the global ARGS variable.
