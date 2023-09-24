@@ -6,7 +6,7 @@ relic/
 ################################################################################
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/Archives.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Archives.gitignore
 #
 
 # It's better to unpack these files and commit the raw source because
@@ -25,6 +25,7 @@ relic/
 *.lzma
 *.cab
 *.xar
+*.zst
 
 # Packing-only formats
 *.iso
@@ -43,7 +44,7 @@ relic/
 *.txz
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/Backup.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Backup.gitignore
 #
 
 *.bak
@@ -53,14 +54,14 @@ relic/
 *.tmp
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/Diff.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Diff.gitignore
 #
 
 *.patch
 *.diff
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/Emacs.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Emacs.gitignore
 #
 
 # -*- mode: gitignore; -*-
@@ -114,7 +115,7 @@ flycheck_*.el
 
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/Linux.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Linux.gitignore
 #
 
 *~
@@ -132,7 +133,7 @@ flycheck_*.el
 .nfs*
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/macOS.gitignore
 #
 
 # General
@@ -163,7 +164,7 @@ Temporary Items
 .apdisk
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/SublimeText.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/SublimeText.gitignore
 #
 
 # Cache files for Sublime Text
@@ -199,7 +200,7 @@ bh_unicode_properties.cache
 GitHub.sublime-settings
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/Vim.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Vim.gitignore
 #
 
 # Swap
@@ -223,7 +224,7 @@ tags
 [._]*.un~
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/VisualStudio.gitignore
 #
 
 ## Ignore Visual Studio temporary files, build results, and
@@ -626,7 +627,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/Windows.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Windows.gitignore
 #
 
 # Windows thumbnail cache files
@@ -655,7 +656,7 @@ $RECYCLE.BIN/
 *.lnk
 
 #
-# FROM: https://raw.githubusercontent.com/github/gitignore/master/Global/Xcode.gitignore
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Xcode.gitignore
 #
 
 ## User settings
