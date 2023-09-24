@@ -98,6 +98,8 @@ EOF
 
 pushd "${ROOT}" > /dev/null
 
+git submodule update --init --recursive --remote
+
 print_header
 list_gitignores
 print_footer
