@@ -76,7 +76,7 @@ function print_header() {
 #! /bin/bash
 
 #
-# WARNING: This file is auto-generated. Do not edit manually.
+# IMPORTANT: Entries below are auto-generated. Do not edit manually.
 #
 
 declare -A FILE
