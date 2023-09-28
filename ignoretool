@@ -220,7 +220,7 @@ function create() {
   # Print all files to stdout.
   cat << EOF
 ################################################################################
-# WARNING: Below rules are auto-generated. Enter custom rules above.
+# IMPORTANT: Entries below are auto-generated. Do not edit manually.
 ################################################################################
 EOF
   for key in "${selections[@]}"; do
@@ -239,7 +239,8 @@ function list() {
   # from the headers.
   while read -r line; do
     if [[ "${line}" =~ ^\#+\ F(ROM|rom) ]] ||
-       [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]]; then
+       [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]] ||
+       [[ "${line}" =~ ^\#+\ I(MPORTANT|mportant) ]]; then
       source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\): \(.*\),\2,p")"
       if [ -n "${source}" ]; then
         sections+=("${source}")
@@ -286,7 +287,8 @@ function remove() {
     if [[ "${line}" =~ ^\#+ ]]; then
       while [[ "${line}" =~ ^\#+ ]]; do
         if [[ "${line}" =~ ^\#+\ F(ROM|rom) ]] ||
-          [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]]; then
+           [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]] ||
+           [[ "${line}" =~ ^\#+\ I(MPORTANT|mportant) ]]; then
           skip=false
           source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\): \(.*\),\2,p")"
           if [ -n "${source}" ]; then
@@ -335,7 +337,8 @@ function update() {
   # section headers and store their identities in an array.
   while read -r line; do
     if [[ "${line}" =~ ^\#+\ F(ROM|rom) ]] ||
-       [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]]; then
+       [[ "${line}" =~ ^\#+\ W(ARNING|arning) ]] ||
+       [[ "${line}" =~ ^\#+\ I(MPORTANT|mportant) ]]; then
       is_header=false
       source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\):\? \(.*\),\2,p")"
       if [ -n "${source}" ]; then
@@ -352,7 +355,7 @@ function update() {
   if [ -n "${sections[*]}" ]; then
     cat << EOF
 ################################################################################
-# WARNING: Below rules are auto-generated. Enter custom rules above.
+# IMPORTANT: Entries below are auto-generated. Do not edit manually.
 ################################################################################
 EOF
     for source in "${sections[@]}"; do

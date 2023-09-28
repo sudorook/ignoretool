@@ -75,9 +75,9 @@ function print_header() {
   cat << EOF
 #! /bin/bash
 
-#
+################################################################################
 # IMPORTANT: Entries below are auto-generated. Do not edit manually.
-#
+################################################################################
 
 declare -A FILE
 declare -A URL
