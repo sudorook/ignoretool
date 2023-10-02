@@ -63,9 +63,11 @@ function list_gitignores() {
             continue
             ;;
         esac
-        echo "FILE[${key@Q}]=${file@Q}"
-        echo "URL[${key@Q}]=${url@Q}"
-        echo
+        cat << EOF
+FILE[${key@Q}]=${file@Q}
+URL[${key@Q}]=${url@Q}
+
+EOF
       done <<< "$(find "./${dir}" -type f -name "*.gitignore" | sort -d -f)"
     else
       show_warning "WARNING: ${dir@Q} not found. Skipping." >&2
