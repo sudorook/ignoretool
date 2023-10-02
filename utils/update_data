@@ -1,16 +1,19 @@
 #! /bin/bash
-set -euo pipefail
+set -Eeuo pipefail
 
 #
 # Globals
 #
 
 ROOT="$(dirname "$(dirname "$(readlink -f "${0}")")")"
-DIRS=(gitignore)
 
 source "${ROOT}/globals"
 
 ! check_command find git sed && exit 3
+
+DIRS=(gitignore)
+TMP="$(mktemp)"
+trap 'rm -f "${TMP}"; exit' INT TERM ERR EXIT
 
 #
 # Functions
@@ -100,6 +103,17 @@ pushd "${ROOT}" > /dev/null
 
 git submodule update --init --recursive --remote
 
-print_header
-list_gitignores
-print_footer
+show_header "Rebuilding ${ROOT}/data..."
+{
+  print_header
+  list_gitignores
+  print_footer
+} > "${TMP}"
+
+if [ -n "${TMP}" ]; then
+  cp -vf "${TMP}" "${ROOT}"/data
+  show_success "Done"
+else
+  show_error "ERROR: output ${TMP} is empty. Exiting."
+  exit 3
+fi
