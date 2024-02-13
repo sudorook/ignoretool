@@ -69,7 +69,7 @@ function fzf_select() {
     xargs -0
 }
 
-# Write output to disk, backing up exising .gitignore if necessary.
+# Write output to disk, backing up existing .gitignore if necessary.
 function write_gitignore() {
   # Changes are stored in memory as a temp file. Simply move from memory to the
   # .gitignore location on disk.
@@ -123,7 +123,7 @@ function get_gitignore_path() {
     return
   fi
 
-  # If not found via Git, try for the current workign directory. Exit if not found.
+  # If not found via Git, try for the current working directory. Exit if not found.
   if [ -f .gitignore ]; then
     echo ".gitignore"
     return
