@@ -106,7 +106,6 @@ check_command() {
   local missing=()
   for package in "${@}"; do
     if ! command -v "${package}" > /dev/null; then
-      show_warning "huh" >&2
       missing+=("${package}")
     fi
   done
