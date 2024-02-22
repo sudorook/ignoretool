@@ -150,8 +150,7 @@ function get_gitignore_path() {
 function add() {
   local selections
   local key
-  local u
-  local f
+  local key_filename
   local line
   local source
   local idx
@@ -170,10 +169,12 @@ function add() {
     # If there is a match, remove the item from selections().
     if grep -q "^#\+ F\(ROM\|rom\):\?" <<< "${line}"; then
       source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\):\? \(.*\),\2,p")"
-      tmp="$(basename "${source}")"
+      tmp="${source##*/}"
       for idx in "${!selections[@]}"; do
         key="${selections["${idx}"]}"
-        if [ "$(basename "${source}")" = "$(basename "${FILE["${key}"]}")" ]; then
+        key_filename="${FILE["${key}"]}"
+        key_filename="${key_filename##*/}"
+        if [ "${tmp}" = "${key_filename}" ]; then
           show_info "${key@Q} already in .gitignore. Skipping." >&2
           unset "selections[${idx}]"
         fi
