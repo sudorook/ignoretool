@@ -361,7 +361,7 @@ EOF
     for source in "${sections[@]}"; do
       # If file has a custom URL, try to match it to the FILE entries based on
       # identity of the file name. If no match is found, try downloading the
-      # URL vai cURL.
+      # URL via cURL.
       tmp="${source//https:\/\//}"
       tmp="${tmp#*/}"
       tmp="${tmp#*/}"
