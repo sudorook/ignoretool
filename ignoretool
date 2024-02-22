@@ -64,7 +64,7 @@ function sanitize_url() {
 # among them. (Need xargs to undo newline delimiter.)
 function fzf_select() {
   printf "%s\n" "${!FILE[@]}" |
-    sort -f -d |
+    sort -f |
     fzf -m --layout=reverse --header-first --print0 |
     xargs -0
 }
