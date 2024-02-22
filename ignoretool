@@ -45,11 +45,24 @@ function parse_args() {
 # Perform the inverse return key given value (file path).
 function value_to_key {
   local filename
+  local name
   local key
+  local key_filename
 
-  filename="$(basename "${1}")"
+  filename="${1##*/}"
+  name="${filename%.*}"
+
   for key in "${!FILE[@]}"; do
-    if [[ "${FILE["${key}"]}" =~ /${filename}$ ]]; then
+    key_filename="${FILE["${key}"]}"
+    key_filename="${key_filename##*/}"
+    if [[ "${filename}" = "${key_filename}" ]]; then
+      echo "${key}"
+      return
+    fi
+  done
+
+  for key in "${!FILE[@]}"; do
+    if [[ "${key}" = "${name,,}" ]]; then
       echo "${key}"
       return
     fi
