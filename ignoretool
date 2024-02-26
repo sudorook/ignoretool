@@ -87,6 +87,11 @@ function write_gitignore() {
   # Changes are stored in memory as a temp file. Simply move from memory to the
   # .gitignore location on disk.
   if [ -f "${TMP}" ]; then
+    if cmp -s "${TMP}" "${INFILE}"; then
+      show_info "No changes."
+      rm "${TMP}"
+      return
+    fi
     if [ -s "${TMP}" ]; then
       if [ -f "${INFILE}" ] && "${KEEP}"; then
         mv -v "${INFILE}" "${INFILE}_$(date +%Y%m%d-%H%M%S)"
