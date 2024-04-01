@@ -410,12 +410,13 @@ EOF
 }
 
 function print_usage() {
-  show_header "usage: ignoretool <mode> <arglist> -f <gitignore> -w"
-  show_listitem "     <mode>       add, create, list, remove, or update"
-  show_listitem "     <arglist>    (optional) list of programs to append to .gitignore"
-  show_listitem "  -f <gitignore>  (optional) path to Git repo .gitignore file"
-  show_listitem "  -w              (optional) write output to disk instead of stdout"
-  show_listitem "  -k              (optional) backup exisint .gitignore before writing new one"
+  show_header "Usage: ignoretool <mode> <arglist> -f <gitignore> -w"
+  show_listitem "\
+     <mode>       add, create, list, remove, or update
+     <arglist>    (optional) list of programs to append to .gitignore
+  -f <gitignore>  (optional) path to Git repo .gitignore file
+  -w              (optional) write output to disk instead of stdout
+  -k              (optional) backup exisint .gitignore before writing new one"
 }
 
 DEFAULTS=(archives backup diff linux macos patch windows)
