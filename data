@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# SPDX-FileCopyrightText: 2023 sudorook <daemon@nullcodon.com>
+# SPDX-FileCopyrightText: 2023 - 2024 sudorook <daemon@nullcodon.com>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
@@ -51,6 +51,9 @@ URL['archlinuxpackages']='https://raw.githubusercontent.com/sudorook/gitignore/t
 FILE['autotools']='./gitignore/Autotools.gitignore'
 URL['autotools']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Autotools.gitignore'
 
+FILE['ballerina']='./gitignore/Ballerina.gitignore'
+URL['ballerina']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Ballerina.gitignore'
+
 FILE['cakephp']='./gitignore/CakePHP.gitignore'
 URL['cakephp']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/CakePHP.gitignore'
 
@@ -74,6 +77,9 @@ URL['codeigniter']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/C
 
 FILE['commonlisp']='./gitignore/CommonLisp.gitignore'
 URL['commonlisp']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/CommonLisp.gitignore'
+
+FILE['alteryx']='./gitignore/community/Alteryx.gitignore'
+URL['alteryx']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Alteryx.gitignore'
 
 FILE['altiumdesigner']='./gitignore/community/AltiumDesigner.gitignore'
 URL['altiumdesigner']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/AltiumDesigner.gitignore'
@@ -228,6 +234,9 @@ URL['strapi']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/commun
 FILE['toit']='./gitignore/community/Toit.gitignore'
 URL['toit']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Toit.gitignore'
 
+FILE['uipath']='./gitignore/community/UiPath.gitignore'
+URL['uipath']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/UiPath.gitignore'
+
 FILE['v']='./gitignore/community/V.gitignore'
 URL['v']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/V.gitignore'
 
@@ -308,6 +317,9 @@ URL['gcov']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Gcov.git
 
 FILE['gitbook']='./gitignore/GitBook.gitignore'
 URL['gitbook']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/GitBook.gitignore'
+
+FILE['githubpages']='./gitignore/GitHubPages.gitignore'
+URL['githubpages']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/GitHubPages.gitignore'
 
 FILE['al']='./gitignore/Global/AL.gitignore'
 URL['al']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/AL.gitignore'
@@ -410,6 +422,9 @@ URL['macos']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/
 
 FILE['matlab']='./gitignore/Global/MATLAB.gitignore'
 URL['matlab']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/MATLAB.gitignore'
+
+FILE['media']='./gitignore/Global/Media.gitignore'
+URL['media']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Media.gitignore'
 
 FILE['mercurial']='./gitignore/Global/Mercurial.gitignore'
 URL['mercurial']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Mercurial.gitignore'
@@ -530,6 +545,9 @@ URL['gwt']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/GWT.gitig
 
 FILE['haskell']='./gitignore/Haskell.gitignore'
 URL['haskell']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Haskell.gitignore'
+
+FILE['iar']='./gitignore/IAR.gitignore'
+URL['iar']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/IAR.gitignore'
 
 FILE['idris']='./gitignore/Idris.gitignore'
 URL['idris']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Idris.gitignore'

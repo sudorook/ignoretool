@@ -26,6 +26,7 @@ relic/
 *.cab
 *.xar
 *.zst
+*.tzst
 
 # Packing-only formats
 *.iso
@@ -660,7 +661,3 @@ $RECYCLE.BIN/
 
 ## User settings
 xcuserdata/
-
-## Xcode 8 and earlier
-*.xcscmblueprint
-*.xccheckout
