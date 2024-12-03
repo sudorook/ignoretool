@@ -164,6 +164,13 @@ Temporary Items
 .apdisk
 
 #
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Patch.gitignore
+#
+
+*.orig
+*.rej
+
+#
 # FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/SublimeText.gitignore
 #
 
