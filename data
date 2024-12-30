@@ -144,6 +144,9 @@ URL['golang_hugo']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/c
 FILE['gretl']='./gitignore/community/Gretl.gitignore'
 URL['gretl']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Gretl.gitignore'
 
+FILE['hexo']='./gitignore/community/Hexo.gitignore'
+URL['hexo']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Hexo.gitignore'
+
 FILE['java_jboss4']='./gitignore/community/Java/JBoss4.gitignore'
 URL['java_jboss4']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Java/JBoss4.gitignore'
 
@@ -171,6 +174,9 @@ URL['linux_snap']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/co
 FILE['logtalk']='./gitignore/community/Logtalk.gitignore'
 URL['logtalk']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Logtalk.gitignore'
 
+FILE['move']='./gitignore/community/Move.gitignore'
+URL['move']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Move.gitignore'
+
 FILE['nasaspecsintact']='./gitignore/community/NasaSpecsIntact.gitignore'
 URL['nasaspecsintact']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/NasaSpecsIntact.gitignore'
 
@@ -179,6 +185,9 @@ URL['nix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community
 
 FILE['openssl']='./gitignore/community/OpenSSL.gitignore'
 URL['openssl']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/OpenSSL.gitignore'
+
+FILE['opentofu']='./gitignore/community/OpenTofu.gitignore'
+URL['opentofu']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/OpenTofu.gitignore'
 
 FILE['php_bitrix']='./gitignore/community/PHP/Bitrix.gitignore'
 URL['php_bitrix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/PHP/Bitrix.gitignore'
@@ -231,6 +240,9 @@ URL['splunk']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/commun
 FILE['strapi']='./gitignore/community/Strapi.gitignore'
 URL['strapi']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Strapi.gitignore'
 
+FILE['terragrunt']='./gitignore/community/Terragrunt.gitignore'
+URL['terragrunt']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Terragrunt.gitignore'
+
 FILE['toit']='./gitignore/community/Toit.gitignore'
 URL['toit']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Toit.gitignore'
 
@@ -275,6 +287,9 @@ URL['drupal']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Drupal
 
 FILE['eagle']='./gitignore/Eagle.gitignore'
 URL['eagle']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Eagle.gitignore'
+
+FILE['ecu-test']='./gitignore/ECU-TEST.gitignore'
+URL['ecu-test']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/ECU-TEST.gitignore'
 
 FILE['elisp']='./gitignore/Elisp.gitignore'
 URL['elisp']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Elisp.gitignore'
@@ -579,6 +594,9 @@ URL['kicad']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/KiCad.g
 FILE['kohana']='./gitignore/Kohana.gitignore'
 URL['kohana']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Kohana.gitignore'
 
+FILE['kotlin']='./gitignore/Kotlin.gitignore'
+URL['kotlin']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Kotlin.gitignore'
+
 FILE['labview']='./gitignore/LabVIEW.gitignore'
 URL['labview']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/LabVIEW.gitignore'
 
@@ -677,6 +695,9 @@ URL['rails']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Rails.g
 
 FILE['raku']='./gitignore/Raku.gitignore'
 URL['raku']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Raku.gitignore'
+
+FILE['rescript']='./gitignore/ReScript.gitignore'
+URL['rescript']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/ReScript.gitignore'
 
 FILE['r']='./gitignore/R.gitignore'
 URL['r']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/R.gitignore'
@@ -785,6 +806,9 @@ URL['zendframework']='https://raw.githubusercontent.com/sudorook/gitignore/tweak
 
 FILE['zephir']='./gitignore/Zephir.gitignore'
 URL['zephir']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Zephir.gitignore'
+
+FILE['zig']='./gitignore/Zig.gitignore'
+URL['zig']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Zig.gitignore'
 
 export FILE
 export URL
