@@ -55,7 +55,7 @@ function list_gitignores() {
                sed -e "s,${dir}/,,g" |
                sed -e "s,^\./,,g" -e "s,community/,,g" -e "s,global/,,g" -e "s,/,_,g" |
                sed -n "s,\(.*\).gitignore,\1,p")"
-        branch="$(git -C "$(dirname "${file}")" rev-parse --abbrev-ref HEAD)"
+        branch="$(git -C "$(dirname "${file}")" name-rev HEAD | cut -d"/" -f3)"
         remote="$(git -C "$(dirname "${file}")" remote get-url --all origin)"
         repo="$(basename "${remote}" | sed -e "s/\.git$//g")"
         host="$(dirname "${remote}")"
