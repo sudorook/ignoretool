@@ -87,6 +87,9 @@ URL['altiumdesigner']='https://raw.githubusercontent.com/sudorook/gitignore/twea
 FILE['autoit']='./gitignore/community/AutoIt.gitignore'
 URL['autoit']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/AutoIt.gitignore'
 
+FILE['automationstudio']='./gitignore/community/AutomationStudio.gitignore'
+URL['automationstudio']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/AutomationStudio.gitignore'
+
 FILE['aws_cdk']='./gitignore/community/AWS/CDK.gitignore'
 URL['aws_cdk']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/AWS/CDK.gitignore'
 
@@ -317,6 +320,9 @@ URL['fancy']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Fancy.g
 
 FILE['finale']='./gitignore/Finale.gitignore'
 URL['finale']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Finale.gitignore'
+
+FILE['firebase']='./gitignore/Firebase.gitignore'
+URL['firebase']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Firebase.gitignore'
 
 FILE['flaxengine']='./gitignore/FlaxEngine.gitignore'
 URL['flaxengine']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/FlaxEngine.gitignore'
@@ -629,6 +635,9 @@ URL['mercury']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Mercu
 
 FILE['metaprogrammingsystem']='./gitignore/MetaProgrammingSystem.gitignore'
 URL['metaprogrammingsystem']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/MetaProgrammingSystem.gitignore'
+
+FILE['modelica']='./gitignore/Modelica.gitignore'
+URL['modelica']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Modelica.gitignore'
 
 FILE['nanoc']='./gitignore/Nanoc.gitignore'
 URL['nanoc']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nanoc.gitignore'
