@@ -186,6 +186,15 @@ URL['nasaspecsintact']='https://raw.githubusercontent.com/sudorook/gitignore/twe
 FILE['nix']='./gitignore/community/Nix.gitignore'
 URL['nix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Nix.gitignore'
 
+FILE['obsidian_notesandcoreconfiguration']='./gitignore/community/Obsidian/NotesAndCoreConfiguration.gitignore'
+URL['obsidian_notesandcoreconfiguration']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Obsidian/NotesAndCoreConfiguration.gitignore'
+
+FILE['obsidian_notesandextendedconfiguration']='./gitignore/community/Obsidian/NotesAndExtendedConfiguration.gitignore'
+URL['obsidian_notesandextendedconfiguration']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Obsidian/NotesAndExtendedConfiguration.gitignore'
+
+FILE['obsidian_notesonly']='./gitignore/community/Obsidian/NotesOnly.gitignore'
+URL['obsidian_notesonly']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Obsidian/NotesOnly.gitignore'
+
 FILE['openssl']='./gitignore/community/OpenSSL.gitignore'
 URL['openssl']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/OpenSSL.gitignore'
 
@@ -326,6 +335,9 @@ URL['firebase']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Fire
 
 FILE['flaxengine']='./gitignore/FlaxEngine.gitignore'
 URL['flaxengine']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/FlaxEngine.gitignore'
+
+FILE['flutter']='./gitignore/Flutter.gitignore'
+URL['flutter']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Flutter.gitignore'
 
 FILE['forcedotcom']='./gitignore/ForceDotCom.gitignore'
 URL['forcedotcom']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/ForceDotCom.gitignore'
