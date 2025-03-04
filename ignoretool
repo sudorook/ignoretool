@@ -157,16 +157,9 @@ function get_gitignore_path() {
     root="$(git rev-parse --show-toplevel)"
     echo "${root}"/.gitignore
     return
-  fi
-
-  # If not found via Git, try for the current working directory. Exit if not found.
-  if [ -f .gitignore ]; then
+  else
     echo ".gitignore"
-    return
   fi
-
-  show_error "ERROR: Could not find .gitignore file. Exiting." >&2
-  exit 3
 }
 
 # Add a new ignore section to an existing .gitignore file.
