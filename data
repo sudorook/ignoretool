@@ -294,6 +294,9 @@ URL['d']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/D.gitignore
 FILE['dm']='./gitignore/DM.gitignore'
 URL['dm']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/DM.gitignore'
 
+FILE['dotnet']='./gitignore/Dotnet.gitignore'
+URL['dotnet']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Dotnet.gitignore'
+
 FILE['drupal']='./gitignore/Drupal.gitignore'
 URL['drupal']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Drupal.gitignore'
 
@@ -635,6 +638,9 @@ URL['lithium']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Lithi
 
 FILE['lua']='./gitignore/Lua.gitignore'
 URL['lua']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Lua.gitignore'
+
+FILE['luau']='./gitignore/Luau.gitignore'
+URL['luau']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Luau.gitignore'
 
 FILE['magento']='./gitignore/Magento.gitignore'
 URL['magento']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Magento.gitignore'
