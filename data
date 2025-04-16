@@ -303,8 +303,8 @@ URL['drupal']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Drupal
 FILE['eagle']='./gitignore/Eagle.gitignore'
 URL['eagle']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Eagle.gitignore'
 
-FILE['ecu-test']='./gitignore/ECU-TEST.gitignore'
-URL['ecu-test']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/ECU-TEST.gitignore'
+FILE['ecu.test']='./gitignore/ecu.test.gitignore'
+URL['ecu.test']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/ecu.test.gitignore'
 
 FILE['elisp']='./gitignore/Elisp.gitignore'
 URL['elisp']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Elisp.gitignore'
