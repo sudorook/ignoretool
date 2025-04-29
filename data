@@ -117,6 +117,9 @@ URL['dotnet_kentico']='https://raw.githubusercontent.com/sudorook/gitignore/twea
 FILE['dotnet_umbraco']='./gitignore/community/DotNet/Umbraco.gitignore'
 URL['dotnet_umbraco']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/DotNet/Umbraco.gitignore'
 
+FILE['dotter']='./gitignore/community/Dotter.gitignore'
+URL['dotter']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Dotter.gitignore'
+
 FILE['elixir_phoenix']='./gitignore/community/Elixir/Phoenix.gitignore'
 URL['elixir_phoenix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Elixir/Phoenix.gitignore'
 
@@ -768,6 +771,9 @@ URL['sketchup']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Sket
 FILE['smalltalk']='./gitignore/Smalltalk.gitignore'
 URL['smalltalk']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Smalltalk.gitignore'
 
+FILE['solidity-remix']='./gitignore/Solidity-Remix.gitignore'
+URL['solidity-remix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Solidity-Remix.gitignore'
+
 FILE['stella']='./gitignore/Stella.gitignore'
 URL['stella']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Stella.gitignore'
 
@@ -785,6 +791,9 @@ URL['symphonycms']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/S
 
 FILE['terraform']='./gitignore/Terraform.gitignore'
 URL['terraform']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Terraform.gitignore'
+
+FILE['testcomplete']='./gitignore/TestComplete.gitignore'
+URL['testcomplete']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/TestComplete.gitignore'
 
 FILE['tex']='./gitignore/TeX.gitignore'
 URL['tex']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/TeX.gitignore'
