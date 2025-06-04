@@ -30,6 +30,9 @@ URL['actionscript']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/
 FILE['ada']='./gitignore/Ada.gitignore'
 URL['ada']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Ada.gitignore'
 
+FILE['adventuregamestudio']='./gitignore/AdventureGameStudio.gitignore'
+URL['adventuregamestudio']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/AdventureGameStudio.gitignore'
+
 FILE['agda']='./gitignore/Agda.gitignore'
 URL['agda']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Agda.gitignore'
 
@@ -174,6 +177,9 @@ URL['javascript_vue']='https://raw.githubusercontent.com/sudorook/gitignore/twea
 FILE['lensstudio']='./gitignore/community/LensStudio.gitignore'
 URL['lensstudio']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/LensStudio.gitignore'
 
+FILE['libogc']='./gitignore/community/libogc.gitignore'
+URL['libogc']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/libogc.gitignore'
+
 FILE['linux_snap']='./gitignore/community/Linux/Snap.gitignore'
 URL['linux_snap']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Linux/Snap.gitignore'
 
@@ -185,9 +191,6 @@ URL['move']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/communit
 
 FILE['nasaspecsintact']='./gitignore/community/NasaSpecsIntact.gitignore'
 URL['nasaspecsintact']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/NasaSpecsIntact.gitignore'
-
-FILE['nix']='./gitignore/community/Nix.gitignore'
-URL['nix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Nix.gitignore'
 
 FILE['obsidian_notesandcoreconfiguration']='./gitignore/community/Obsidian/NotesAndCoreConfiguration.gitignore'
 URL['obsidian_notesandcoreconfiguration']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Obsidian/NotesAndCoreConfiguration.gitignore'
@@ -360,6 +363,9 @@ URL['gitbook']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/GitBo
 FILE['githubpages']='./gitignore/GitHubPages.gitignore'
 URL['githubpages']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/GitHubPages.gitignore'
 
+FILE['gleam']='./gitignore/Gleam.gitignore'
+URL['gleam']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Gleam.gitignore'
+
 FILE['al']='./gitignore/Global/AL.gitignore'
 URL['al']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/AL.gitignore'
 
@@ -389,6 +395,9 @@ URL['cloud9']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global
 
 FILE['codekit']='./gitignore/Global/CodeKit.gitignore'
 URL['codekit']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/CodeKit.gitignore'
+
+FILE['cursor']='./gitignore/Global/Cursor.gitignore'
+URL['cursor']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Cursor.gitignore'
 
 FILE['cvs']='./gitignore/Global/CVS.gitignore'
 URL['cvs']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/CVS.gitignore'
@@ -498,6 +507,9 @@ URL['otto']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/O
 FILE['patch']='./gitignore/Global/Patch.gitignore'
 URL['patch']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Patch.gitignore'
 
+FILE['platformio']='./gitignore/Global/PlatformIO.gitignore'
+URL['platformio']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/PlatformIO.gitignore'
+
 FILE['psoccreator']='./gitignore/Global/PSoCCreator.gitignore'
 URL['psoccreator']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/PSoCCreator.gitignore'
 
@@ -585,6 +597,9 @@ URL['gwt']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/GWT.gitig
 FILE['haskell']='./gitignore/Haskell.gitignore'
 URL['haskell']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Haskell.gitignore'
 
+FILE['haxe']='./gitignore/Haxe.gitignore'
+URL['haxe']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Haxe.gitignore'
+
 FILE['iar']='./gitignore/IAR.gitignore'
 URL['iar']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/IAR.gitignore'
 
@@ -623,6 +638,9 @@ URL['kotlin']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Kotlin
 
 FILE['labview']='./gitignore/LabVIEW.gitignore'
 URL['labview']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/LabVIEW.gitignore'
+
+FILE['langchain']='./gitignore/LangChain.gitignore'
+URL['langchain']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/LangChain.gitignore'
 
 FILE['laravel']='./gitignore/Laravel.gitignore'
 URL['laravel']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Laravel.gitignore'
@@ -663,8 +681,14 @@ URL['modelica']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Mode
 FILE['nanoc']='./gitignore/Nanoc.gitignore'
 URL['nanoc']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nanoc.gitignore'
 
+FILE['nextjs']='./gitignore/Nextjs.gitignore'
+URL['nextjs']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nextjs.gitignore'
+
 FILE['nim']='./gitignore/Nim.gitignore'
 URL['nim']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nim.gitignore'
+
+FILE['nix']='./gitignore/Nix.gitignore'
+URL['nix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nix.gitignore'
 
 FILE['node']='./gitignore/Node.gitignore'
 URL['node']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Node.gitignore'
