@@ -42,6 +42,9 @@ URL['al']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/AL.gitigno
 FILE['android']='./gitignore/Android.gitignore'
 URL['android']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Android.gitignore'
 
+FILE['angular']='./gitignore/Angular.gitignore'
+URL['angular']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Angular.gitignore'
+
 FILE['appceleratortitanium']='./gitignore/AppceleratorTitanium.gitignore'
 URL['appceleratortitanium']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/AppceleratorTitanium.gitignore'
 
@@ -165,6 +168,9 @@ URL['java_jboss6']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/c
 FILE['javascript_cordova']='./gitignore/community/JavaScript/Cordova.gitignore'
 URL['javascript_cordova']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/JavaScript/Cordova.gitignore'
 
+FILE['javascript_expo']='./gitignore/community/JavaScript/Expo.gitignore'
+URL['javascript_expo']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/JavaScript/Expo.gitignore'
+
 FILE['javascript_meteor']='./gitignore/community/JavaScript/Meteor.gitignore'
 URL['javascript_meteor']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/JavaScript/Meteor.gitignore'
 
@@ -266,6 +272,9 @@ URL['toit']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/communit
 
 FILE['uipath']='./gitignore/community/UiPath.gitignore'
 URL['uipath']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/UiPath.gitignore'
+
+FILE['utau']='./gitignore/community/UTAU.gitignore'
+URL['utau']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/UTAU.gitignore'
 
 FILE['v']='./gitignore/community/V.gitignore'
 URL['v']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/V.gitignore'
@@ -627,6 +636,9 @@ URL['joomla']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Joomla
 FILE['julia']='./gitignore/Julia.gitignore'
 URL['julia']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Julia.gitignore'
 
+FILE['katalon']='./gitignore/Katalon.gitignore'
+URL['katalon']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Katalon.gitignore'
+
 FILE['kicad']='./gitignore/KiCad.gitignore'
 URL['kicad']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/KiCad.gitignore'
 
@@ -680,6 +692,9 @@ URL['modelica']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Mode
 
 FILE['nanoc']='./gitignore/Nanoc.gitignore'
 URL['nanoc']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nanoc.gitignore'
+
+FILE['nestjs']='./gitignore/Nestjs.gitignore'
+URL['nestjs']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nestjs.gitignore'
 
 FILE['nextjs']='./gitignore/Nextjs.gitignore'
 URL['nextjs']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nextjs.gitignore'
@@ -839,6 +854,9 @@ URL['unity']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Unity.g
 
 FILE['unrealengine']='./gitignore/UnrealEngine.gitignore'
 URL['unrealengine']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/UnrealEngine.gitignore'
+
+FILE['vba']='./gitignore/VBA.gitignore'
+URL['vba']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/VBA.gitignore'
 
 FILE['visualstudio']='./gitignore/VisualStudio.gitignore'
 URL['visualstudio']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/VisualStudio.gitignore'
