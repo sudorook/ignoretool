@@ -492,6 +492,9 @@ URL['metals']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global
 FILE['microsoftoffice']='./gitignore/Global/MicrosoftOffice.gitignore'
 URL['microsoftoffice']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/MicrosoftOffice.gitignore'
 
+FILE['mise']='./gitignore/Global/mise.gitignore'
+URL['mise']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/mise.gitignore'
+
 FILE['modelsim']='./gitignore/Global/ModelSim.gitignore'
 URL['modelsim']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/ModelSim.gitignore'
 
@@ -608,6 +611,9 @@ URL['haskell']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Haske
 
 FILE['haxe']='./gitignore/Haxe.gitignore'
 URL['haxe']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Haxe.gitignore'
+
+FILE['hip']='./gitignore/HIP.gitignore'
+URL['hip']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/HIP.gitignore'
 
 FILE['iar']='./gitignore/IAR.gitignore'
 URL['iar']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/IAR.gitignore'
@@ -812,6 +818,9 @@ URL['smalltalk']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Sma
 
 FILE['solidity-remix']='./gitignore/Solidity-Remix.gitignore'
 URL['solidity-remix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Solidity-Remix.gitignore'
+
+FILE['ssdt-sqlproj']='./gitignore/SSDT-sqlproj.gitignore'
+URL['ssdt-sqlproj']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/SSDT-sqlproj.gitignore'
 
 FILE['stella']='./gitignore/Stella.gitignore'
 URL['stella']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Stella.gitignore'
