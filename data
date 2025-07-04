@@ -465,6 +465,9 @@ URL['kdevelop4']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Glo
 FILE['lazarus']='./gitignore/Global/Lazarus.gitignore'
 URL['lazarus']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Lazarus.gitignore'
 
+FILE['lefthook']='./gitignore/Global/Lefthook.gitignore'
+URL['lefthook']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Lefthook.gitignore'
+
 FILE['libreoffice']='./gitignore/Global/LibreOffice.gitignore'
 URL['libreoffice']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/LibreOffice.gitignore'
 
