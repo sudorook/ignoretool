@@ -192,6 +192,9 @@ URL['linux_snap']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/co
 FILE['logtalk']='./gitignore/community/Logtalk.gitignore'
 URL['logtalk']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Logtalk.gitignore'
 
+FILE['metatrader5']='./gitignore/community/MetaTrader5.gitignore'
+URL['metatrader5']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/MetaTrader5.gitignore'
+
 FILE['move']='./gitignore/community/Move.gitignore'
 URL['move']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Move.gitignore'
 
