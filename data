@@ -111,6 +111,12 @@ URL['bazel']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/communi
 FILE['beef']='./gitignore/community/Beef.gitignore'
 URL['beef']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Beef.gitignore'
 
+FILE['boxlang_coldbox']='./gitignore/community/BoxLang/ColdBox.gitignore'
+URL['boxlang_coldbox']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/BoxLang/ColdBox.gitignore'
+
+FILE['cfml_coldbox']='./gitignore/community/CFML/ColdBox.gitignore'
+URL['cfml_coldbox']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/CFML/ColdBox.gitignore'
+
 FILE['dotnet_core']='./gitignore/community/DotNet/core.gitignore'
 URL['dotnet_core']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/DotNet/core.gitignore'
 
