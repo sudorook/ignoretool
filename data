@@ -507,9 +507,6 @@ URL['microsoftoffice']='https://raw.githubusercontent.com/sudorook/gitignore/twe
 FILE['mise']='./gitignore/Global/mise.gitignore'
 URL['mise']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/mise.gitignore'
 
-FILE['modelsim']='./gitignore/Global/ModelSim.gitignore'
-URL['modelsim']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/ModelSim.gitignore'
-
 FILE['momentics']='./gitignore/Global/Momentics.gitignore'
 URL['momentics']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Momentics.gitignore'
 
@@ -708,6 +705,9 @@ URL['metaprogrammingsystem']='https://raw.githubusercontent.com/sudorook/gitigno
 FILE['modelica']='./gitignore/Modelica.gitignore'
 URL['modelica']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Modelica.gitignore'
 
+FILE['modelsim']='./gitignore/ModelSim.gitignore'
+URL['modelsim']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/ModelSim.gitignore'
+
 FILE['nanoc']='./gitignore/Nanoc.gitignore'
 URL['nanoc']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nanoc.gitignore'
 
@@ -800,6 +800,9 @@ URL['ruby']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Ruby.git
 
 FILE['rust']='./gitignore/Rust.gitignore'
 URL['rust']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Rust.gitignore'
+
+FILE['salesforce']='./gitignore/Salesforce.gitignore'
+URL['salesforce']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Salesforce.gitignore'
 
 FILE['sass']='./gitignore/Sass.gitignore'
 URL['sass']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Sass.gitignore'
