@@ -552,6 +552,9 @@ URL['slickedit']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Glo
 FILE['stata']='./gitignore/Global/Stata.gitignore'
 URL['stata']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Stata.gitignore'
 
+FILE['stm32cubeide']='./gitignore/Global/STM32CubeIDE.gitignore'
+URL['stm32cubeide']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/STM32CubeIDE.gitignore'
+
 FILE['sublimetext']='./gitignore/Global/SublimeText.gitignore'
 URL['sublimetext']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/SublimeText.gitignore'
 
