@@ -165,12 +165,9 @@ function get_gitignore_path() {
 # Add a new ignore section to an existing .gitignore file.
 function add() {
   local selections
-  local key
-  local key_filename
-  local line
   local source
-  local idx
-  local tmp
+  local sorted_selections
+  local line
 
   # Read list of sections to add, either from ARGS or fzf.
   read -r -a selections <<< "${@}"
@@ -184,18 +181,12 @@ function add() {
     # and check its identity against the list of identities of sections to add.
     # If there is a match, remove the item from selections().
     if grep -q "^#\+ F\(ROM\|rom\):\?" <<< "${line}"; then
-      source="$(echo "${line}" | sed -n "s,^#\+ F\(ROM\|rom\):\? \(.*\),\2,p")"
-      tmp="${source##*/}"
-      for idx in "${!selections[@]}"; do
-        key="${selections["${idx}"]}"
-        key_filename="${FILE["${key}"]}"
-        key_filename="${key_filename##*/}"
-        if [ "${tmp}" = "${key_filename}" ]; then
-          show_info "${key@Q} already in .gitignore. Skipping." >&2
-          unset "selections[${idx}]"
-        fi
-      done
-      selections=("${selections[@]}")  # resets the array indices...
+      source="$(echo "${line}" |
+                  sed -n "s,^#\+ F\(ROM\|rom\):\? \(.*\)\.gitignore$,\2,p")"
+      source="$(echo "${source}" |
+                  cut -d'/' -f7- |
+                  sed -e "s/Global\///g" -e "s/community\///g" -e "s/\//_/g")"
+      selections+=("${source,,}")
 
       # If all the sections specified in selections() are already present,
       # simply exit.
@@ -205,10 +196,16 @@ function add() {
     fi
   done < "${INFILE}"
 
+  readarray -t sorted_selections < <(printf '%s\0' "${selections[@]}" | sort -z -u | xargs -0n1)
+
   # Print all files to stdout.
-  cat "${INFILE}"
-  for key in "${selections[@]}"; do
-    print_section "${key}"
+  sed '/^################################################################################$/q' "${INFILE}"
+  cat << EOF
+# IMPORTANT: Entries below are auto-generated. Do not edit manually.
+################################################################################
+EOF
+  for selection in "${sorted_selections[@]}"; do
+    print_section "${selection}"
   done
 }
 
