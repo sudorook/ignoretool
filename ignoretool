@@ -438,6 +438,7 @@ DEFAULTS=(
   sublimetext
   vim
   visualstudio
+  visualstudiocode
   windows
   xcode
 )
