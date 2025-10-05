@@ -127,9 +127,10 @@ function write_gitignore() {
 
 # Print the file in FILE identified by the key ${1}.
 function print_section() {
-  local key="${1}"
+  local key
   local f
   local u
+  key="${1}"
   f="${FILE["${key}"]}"
   u="${URL["${key}"]}"
   if [ -f "${ROOT}/${f}" ]; then
@@ -221,7 +222,6 @@ function create() {
 
   # Read list of sections to add, either from ARGS or fzf.
   read -r -a selections <<< "${@}"
-  # mapfile -t selections <<< "${@}"
 
   # First prune any overlaps in the selections from the DEFAULT list of files
   # to include in a new .gitignore file.
