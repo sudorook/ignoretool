@@ -670,6 +670,21 @@ FodyWeavers.xsd
 *.msp
 
 #
+# FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/VisualStudioCode.gitignore
+#
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+#
 # FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Windows.gitignore
 #
 
