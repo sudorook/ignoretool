@@ -236,7 +236,7 @@ function create() {
       selections_new+=("${key}")
     fi
   done
-  selections=("${DEFAULTS[@]}" "${selections_new[@]}")
+  mapfile -t selections < <(printf "%s\n" "${DEFAULTS[@]}" "${selections_new[@]}" | sort)
 
   # If all the sections specified in selections() are already present, simply
   # exit.
