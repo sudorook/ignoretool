@@ -219,6 +219,8 @@ function create() {
   local selections=()
   local selections_new=()
   local count
+  local defaults_string
+  defaults_string=" ${DEFAULTS[*]} "
 
   # Read list of sections to add, either from ARGS or fzf.
   read -r -a selections <<< "${@}"
@@ -226,13 +228,7 @@ function create() {
   # First prune any overlaps in the selections from the DEFAULT list of files
   # to include in a new .gitignore file.
   for key in "${selections[@]}"; do
-    count=0
-    for _key in "${DEFAULTS[@]}"; do
-      if ! [[ "${key}" = "${_key}" ]]; then
-        count=$((count + 1))
-      fi
-    done
-    if [ "${count}" -eq "${#DEFAULTS[@]}" ]; then
+    if ! [[ "${defaults_string}" =~ " ${key} " ]]; then
       selections_new+=("${key}")
     fi
   done
