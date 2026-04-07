@@ -675,6 +675,9 @@ URL['langchain']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Lan
 FILE['laravel']='./gitignore/Laravel.gitignore'
 URL['laravel']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Laravel.gitignore'
 
+FILE['lean']='./gitignore/Lean.gitignore'
+URL['lean']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Lean.gitignore'
+
 FILE['leiningen']='./gitignore/Leiningen.gitignore'
 URL['leiningen']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Leiningen.gitignore'
 
