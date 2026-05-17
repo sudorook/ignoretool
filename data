@@ -60,6 +60,9 @@ URL['autotools']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Aut
 FILE['ballerina']='./gitignore/Ballerina.gitignore'
 URL['ballerina']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Ballerina.gitignore'
 
+FILE['bun']='./gitignore/bun.gitignore'
+URL['bun']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/bun.gitignore'
+
 FILE['cakephp']='./gitignore/CakePHP.gitignore'
 URL['cakephp']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/CakePHP.gitignore'
 
@@ -143,6 +146,9 @@ URL['embedded_esp-idf']='https://raw.githubusercontent.com/sudorook/gitignore/tw
 
 FILE['embedded_iar_ewarm']='./gitignore/community/embedded/IAR_EWARM.gitignore'
 URL['embedded_iar_ewarm']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/embedded/IAR_EWARM.gitignore'
+
+FILE['embedded_microchip_mplab_x_ide']='./gitignore/community/embedded/Microchip_MPLAB_X_IDE.gitignore'
+URL['embedded_microchip_mplab_x_ide']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/embedded/Microchip_MPLAB_X_IDE.gitignore'
 
 FILE['embedded_uvision']='./gitignore/community/embedded/uVision.gitignore'
 URL['embedded_uvision']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/embedded/uVision.gitignore'
@@ -273,6 +279,9 @@ URL['splunk']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/commun
 FILE['strapi']='./gitignore/community/Strapi.gitignore'
 URL['strapi']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Strapi.gitignore'
 
+FILE['tauri']='./gitignore/community/Tauri.gitignore'
+URL['tauri']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Tauri.gitignore'
+
 FILE['terragrunt']='./gitignore/community/Terragrunt.gitignore'
 URL['terragrunt']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Terragrunt.gitignore'
 
@@ -311,6 +320,9 @@ URL['dart']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Dart.git
 
 FILE['delphi']='./gitignore/Delphi.gitignore'
 URL['delphi']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Delphi.gitignore'
+
+FILE['deno']='./gitignore/Deno.gitignore'
+URL['deno']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Deno.gitignore'
 
 FILE['d']='./gitignore/D.gitignore'
 URL['d']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/D.gitignore'
@@ -603,6 +615,9 @@ URL['xcode']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/
 FILE['xilinxise']='./gitignore/Global/XilinxISE.gitignore'
 URL['xilinxise']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/XilinxISE.gitignore'
 
+FILE['zed']='./gitignore/Global/Zed.gitignore'
+URL['zed']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Zed.gitignore'
+
 FILE['godot']='./gitignore/Godot.gitignore'
 URL['godot']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Godot.gitignore'
 
@@ -839,6 +854,9 @@ URL['smalltalk']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Sma
 
 FILE['solidity-remix']='./gitignore/Solidity-Remix.gitignore'
 URL['solidity-remix']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Solidity-Remix.gitignore'
+
+FILE['solidworks']='./gitignore/SolidWorks.gitignore'
+URL['solidworks']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/SolidWorks.gitignore'
 
 FILE['ssdt-sqlproj']='./gitignore/SSDT-sqlproj.gitignore'
 URL['ssdt-sqlproj']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/SSDT-sqlproj.gitignore'
