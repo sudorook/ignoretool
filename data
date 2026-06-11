@@ -171,6 +171,9 @@ URL['gretl']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/communi
 FILE['hexo']='./gitignore/community/Hexo.gitignore'
 URL['hexo']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Hexo.gitignore'
 
+FILE['hol']='./gitignore/community/HOL.gitignore'
+URL['hol']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/HOL.gitignore'
+
 FILE['java_jboss4']='./gitignore/community/Java/JBoss4.gitignore'
 URL['java_jboss4']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Java/JBoss4.gitignore'
 
@@ -533,6 +536,9 @@ URL['ninja']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/
 
 FILE['notepadpp']='./gitignore/Global/NotepadPP.gitignore'
 URL['notepadpp']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/NotepadPP.gitignore'
+
+FILE['ohmyopenagent']='./gitignore/Global/OhMyOpenAgent.gitignore'
+URL['ohmyopenagent']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/OhMyOpenAgent.gitignore'
 
 FILE['otto']='./gitignore/Global/Otto.gitignore'
 URL['otto']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Otto.gitignore'
