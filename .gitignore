@@ -718,6 +718,7 @@ FodyWeavers.xsd
 # FROM: https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/VisualStudioCode.gitignore
 #
 
+# Visual Studio Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
