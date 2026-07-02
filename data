@@ -735,6 +735,9 @@ URL['modelica']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Mode
 FILE['modelsim']='./gitignore/ModelSim.gitignore'
 URL['modelsim']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/ModelSim.gitignore'
 
+FILE['moonbit']='./gitignore/MoonBit.gitignore'
+URL['moonbit']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/MoonBit.gitignore'
+
 FILE['nanoc']='./gitignore/Nanoc.gitignore'
 URL['nanoc']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Nanoc.gitignore'
 
