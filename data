@@ -399,6 +399,9 @@ URL['githubpages']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/G
 FILE['gleam']='./gitignore/Gleam.gitignore'
 URL['gleam']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Gleam.gitignore'
 
+FILE['agents']='./gitignore/Global/Agents.gitignore'
+URL['agents']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/Agents.gitignore'
+
 FILE['al']='./gitignore/Global/AL.gitignore'
 URL['al']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Global/AL.gitignore'
 
@@ -695,6 +698,9 @@ URL['langchain']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Lan
 
 FILE['laravel']='./gitignore/Laravel.gitignore'
 URL['laravel']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Laravel.gitignore'
+
+FILE['lasal']='./gitignore/Lasal.gitignore'
+URL['lasal']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Lasal.gitignore'
 
 FILE['lean']='./gitignore/Lean.gitignore'
 URL['lean']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Lean.gitignore'
