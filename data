@@ -156,6 +156,9 @@ URL['embedded_uvision']='https://raw.githubusercontent.com/sudorook/gitignore/tw
 FILE['exercism']='./gitignore/community/Exercism.gitignore'
 URL['exercism']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Exercism.gitignore'
 
+FILE['freecad']='./gitignore/community/FreeCAD.gitignore'
+URL['freecad']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/FreeCAD.gitignore'
+
 FILE['gnome_gnomeshellextension']='./gitignore/community/GNOME/GNOMEShellExtension.gitignore'
 URL['gnome_gnomeshellextension']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/GNOME/GNOMEShellExtension.gitignore'
 
