@@ -420,7 +420,7 @@ function print_usage() {
      <arglist>    (optional) list of programs to append to .gitignore
   -f <gitignore>  (optional) path to Git repo .gitignore file
   -w              (optional) write output to disk instead of stdout
-  -k              (optional) backup exisint .gitignore before writing new one"
+  -k              (optional) backup existing .gitignore before writing new one"
 }
 
 DEFAULTS=(
