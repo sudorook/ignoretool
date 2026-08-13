@@ -424,6 +424,7 @@ function print_usage() {
 }
 
 DEFAULTS=(
+  agents
   archives
   backup
   diff
@@ -431,12 +432,10 @@ DEFAULTS=(
   linux
   macos
   patch
-  sublimetext
   vim
   visualstudio
   visualstudiocode
   windows
-  xcode
 )
 
 if [ "${#}" -eq 0 ]; then
