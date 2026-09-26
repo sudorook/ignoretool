@@ -36,9 +36,6 @@ URL['adventuregamestudio']='https://raw.githubusercontent.com/sudorook/gitignore
 FILE['agda']='./gitignore/Agda.gitignore'
 URL['agda']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Agda.gitignore'
 
-FILE['al']='./gitignore/AL.gitignore'
-URL['al']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/AL.gitignore'
-
 FILE['android']='./gitignore/Android.gitignore'
 URL['android']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/Android.gitignore'
 
