@@ -201,6 +201,9 @@ URL['lensstudio']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/co
 FILE['libogc']='./gitignore/community/libogc.gitignore'
 URL['libogc']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/libogc.gitignore'
 
+FILE['linux_flatpak']='./gitignore/community/Linux/Flatpak.gitignore'
+URL['linux_flatpak']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Linux/Flatpak.gitignore'
+
 FILE['linux_snap']='./gitignore/community/Linux/Snap.gitignore'
 URL['linux_snap']='https://raw.githubusercontent.com/sudorook/gitignore/tweak/community/Linux/Snap.gitignore'
 
